@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<!-- layouts/page -->
+
+
+<div class="container padding fade-in background-image" style="background-image: url('{{ page.banner_image | absolute_url }}');">
+	<div class="grid">
+		<div class="grid__item one-whole  fade-down">
+			<div class="post-meta">
+				<h1 class="post-title fade-down ">{{ page.title }}</h1>
+				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="rte">
+	            {{ content }}
+	        </div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		setTimeout(function(){
+        	$('.container.fade-in').addClass('active');
+        }, 1000);
+	});
+</script>

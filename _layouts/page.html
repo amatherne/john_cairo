@@ -21,11 +21,19 @@ layout: default
 				<div class="arrow-bg"></div>
 			</div>
 		{% endfor %}
-
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function () {
 
+			// Target iframes to make them responsive
+			var img = $('img[src*="/uploads/"]');
+			img.each(function () {
+				var current = $(this).attr('src'),
+					abs = '{{ site.baseurl }}';
+				$(this).attr('src', abs + current);
+			})
+
+			// Slider hover info
 			$('.arrow-bg').on('mouseenter', function () {
 				$('.right-overlay').addClass('show');
 
@@ -72,23 +80,13 @@ layout: default
 				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
 			</div>
 			<div class="rte">
-				
-
 	            {{ content }}
-
 	        </div>
 		</div>
 	</div>
 </div>
 
-<script type="text/javascript">
-	// $(document).ready(function () {
-	// 	setTimeout(function(){
- //        	$('.container.padding').addClass('active');
- //        	$('.background-image.page-banner').addClass('active');
- //        }, 1000);
-	// })
-</script>
+
 
 {% comment %}		<div class="grid__item small--hide medium--hide large-up--one-quarter fade-up">
 			{% include side-feed.html %}

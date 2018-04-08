@@ -93,11 +93,11 @@
 
 
 	// Default Colors
-	$btnTextColor:             #fff ;
-	$btnBgColor:			   $brandOne ;
-	$btnBorderColor:		   #fff ;
-	$btnTextHoverColor:        $brandOne;
-	$btnBgHoverColor:		   #fff ;
+	$btnTextColor:             $brandOne ;
+	$btnBgColor:			   $brandThree ;
+	$btnBorderColor:		   $brandThree ;
+	$btnTextHoverColor:        $brandThree;
+	$btnBgHoverColor:		   $brandOne ;
 	$btnBorderHoverColor:	   $brandOne ;
 
 	// // Secondary Colors
