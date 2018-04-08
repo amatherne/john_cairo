@@ -2,6 +2,12 @@
 layout: post
 title: Into the Great Dome
 date: 2018-04-08 03:36:52 +0000
+banner_image: "/uploads/2018/04/08/IMG-0473.JPG"
+gallery:
+- image: "/uploads/2018/04/08/IMG-0473.JPG"
+  caption: Test 1
+- image: "/uploads/2018/04/08/IMG-0471.JPG"
+  caption: Test 2
 ---
 It's a hug, Michael. I'm hugging you. Marry me. I care deeply for nature. Michael! There's so many poorly chosen words in that sentence. As you may or may not know, Lindsay and I have hit a bit of a rough patch.
 
