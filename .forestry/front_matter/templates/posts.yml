@@ -10,7 +10,7 @@ fields:
   label: Layout
   type: text
   hidden: true
-  default: post
+  default: page
 - type: field_group_list
   name: gallery
   label: Gallery
