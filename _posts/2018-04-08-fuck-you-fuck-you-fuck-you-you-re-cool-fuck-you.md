@@ -4,6 +4,12 @@ title: Fuck you. Fuck you. Fuck you. YOU'RE COOL. Fuck You.
 date: 2018-04-08 06:20:40 +0000
 banner_image: "/uploads/2018/04/08/IMG-0465.JPG"
 gallery:
+- image: "/uploads/2018/04/08/IMG-0468.JPG"
+  caption: Steve Holt
+  detail: As you may or may not know, Lindsay and I have hit a bit of a rough patch.
+    But I bought a yearbook ad from you, doesn't that mean anything anymore? I don't
+    criticize you! And if you're worried about criticism, sometimes a diet is the
+    best defense.
 - image: "/uploads/2018/04/08/IMG-0464.JPG"
   caption: It's called 'taking advantage.'
   detail: As you may or may not know, Lindsay and I have hit a bit of a rough patch.
