@@ -9,7 +9,7 @@ fields:
 - name: layout
   label: Layout
   type: text
-  hidden: true
+  hidden: false
   default: page
 - type: field_group_list
   name: gallery
