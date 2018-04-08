@@ -3,7 +3,7 @@
 
 <div class="featured-projects scroll-trigger">
 	<div class="container padding">
-		<h2 class="h1 page-title fade-down">Recent Posts</h2>	
+		{% comment %}<h2 class="h1 page-title fade-down">Recent Posts</h2>	{% endcomment %}
 		<div class="grid fade-down">
 			{% for p in site.posts limit: 4 %}
 				<div class="grid__item {{ width }}" data-date="{{ p.date | date: date_format }}">

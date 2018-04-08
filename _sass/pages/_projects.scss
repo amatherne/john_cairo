@@ -1,28 +1,49 @@
-.template--projects {
+.template--projects,
+.template--posts {
 	.max-width {
 		background-color:$brandThree;
 	}
 	.mainContent {
 		padding-top:($bodyLineHeight * 4.5);
 	}
+	// .site-header {
+	// 	ul {
+
+	// 		li {
+	// 			a {
+	// 				color:$brandFive;
+	// 			}
+	// 		}
+	// 	}
+	// 	.main-nav.show ul li a {
+	// 		color:$brandFour
+	// 	}
+	// 	.nav-toggle:not(.close) {
+	// 		color:$brandFive;
+	// 	}
+	// }
+	.page-title {
+		color:$brandFive;
+		margin:($bodyLineHeight * 0.5) 0 0;
+	}
 	.site-header {
+		background-color:$brandFive;
+		background:linear-gradient(45deg,$brandFive, $brandOne);
+		height:($bodyLineHeight * 4.5);
 		ul {
 
 			li {
 				a {
-					color:$brandFive;
+					color:$brandTwo;
 				}
 			}
 		}
 		.main-nav.show ul li a {
-			color:$brandFour
+			// color:$brandFour;
 		}
 		.nav-toggle:not(.close) {
-			color:$brandFive;
+			color:$brandTwo;
 		}
-	}
-	.page-title {
-		color:$brandFive;
 	}
 
 }

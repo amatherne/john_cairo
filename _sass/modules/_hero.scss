@@ -168,10 +168,17 @@
 			.center-content {
 				font-size:0.8em;
 			}
+			.slide__meta {
+				h5 {
+					// right:($bodyLineHeight * 0.8);
+					bottom:($bodyLineHeight * 2.5);
+				}
+			}
 		}
 		@media screen and (max-width:$grid-medium - 1) {
 			.center-content {
 				font-size:0.65em;
 			}
+			
 		}
 	}

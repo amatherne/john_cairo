@@ -6,7 +6,7 @@
 		width:100%;
 		z-index:10;
 		.container {
-			padding:($bodyLineHeight / 2) $bodyLineHeight;
+			padding:($bodyLineHeight / 2) 0;
 		}
 		ul {
 			margin:0;
@@ -28,11 +28,13 @@
 			font-family:$logoFont;
 			position:absolute;
 			top:($bodyLineHeight * 1.1);
-			left:($bodyLineHeight * 4.5);
+			left:($bodyLineHeight * 5);
 			color:$brandTwo;
 			display:block;
 			width:300px;
-			font-size:1em;
+			font-size:0.95em;
+
+			transform:translateX(0);
 			a {
 				font-size:inherit;
 				color:inherit;
@@ -44,6 +46,7 @@
 				display:block;
 				margin:0;
 				font-weight:400;
+				width:100%;
 			}
 			.sub_title {
 				font-size:0.74em;
@@ -51,6 +54,8 @@
 				font-family:$bodyFont;
 				display:block;
 				margin:0.65em 0 0;
+				width:100%;
+
 			}
 			img {
 				max-width:80px;
@@ -104,6 +109,16 @@
 				transform:translateX(0%);
 				transition: transform .3s linear,
 							opacity .1s linear;
+			}
+		}
+		@media screen and (max-width:$grid-medium - 1) {
+			.logo {
+				left:initial;
+				top:($bodyLineHeight * 1.5);
+				right:0;
+				width:75%;
+				// transform: translateX(-55%) translateY(0) !important;
+				font-size:0.75em;
 			}
 		}
 	}
