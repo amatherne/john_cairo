@@ -1,5 +1,7 @@
 <!-- includes/featured-post -->
 {% assign post = page.featured_post | remove_first: '_' | split: '.' | first %}
+{% assign posturl = page.featured_post | split: '/' | last | split: '.' | first %}
+
 {% assign parts = page.featured_post | split: "/" %}
 {% for part in parts limit: 1 %}
 	{% assign feed = part | remove: '_'%}
@@ -8,7 +10,7 @@
 		{% if p.url contains post_url %}
 			{% assign f_title = p.title %}
 			{% assign f_excpt = p.content %}
-			{% assign f_url = p.post_url %}
+			{% assign f_url = p.post_url | split: '/' | last %}
 			{% assign f_image = p.banner_image %}
 			{% assign f_tag = p.tags.first %}
 			{% assign f_date = p.date %}
@@ -30,7 +32,7 @@
 					<div class="background-image square" style="background-image: url({{ f_image | absolute_url }});">
 						
 					</div>
-					<a class="btn post-btn" href="{{ f_url | absolute_url }}">{% include icon-right-arrow.html %}</a>
+					<a class="btn post-btn" href="{{ posturl | absolute_url }}">{% include icon-right-arrow.html %}</a>
 				</div>
 			</div>
 		</div>
