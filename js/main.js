@@ -3025,7 +3025,7 @@
             if (typeof ret != 'undefined') return ret;
         }
         return _;
-    };
+    };	
 
 }));
 
@@ -3044,7 +3044,7 @@ $(document).ready(function () {
 	});
 
 	scrollHandler = function() {
-	  	var trigger_point = '300',
+	  	var trigger_point = '350',
 	      	scrollPos = window.pageYOffset;
 
 		for (i = 0; i < sections.length; i++) {
@@ -3059,7 +3059,9 @@ $(document).ready(function () {
 	};
 	scrollHandler();
 
+
+
+
+
 	
-
-
 })

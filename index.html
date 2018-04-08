@@ -27,11 +27,11 @@
 		<div class="max-width">
 			<!-- includes/nav -->
 
-<header class="site-header ">
+<header class="site-header fade-in ">
 	<div class="container">
 		<div class="grid">
 			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
-				<h1 class="logo">
+				<h1 class="logo fade-down">
 					<a href="/john_cairo/">
 						
 						
@@ -41,7 +41,7 @@
 					</a>
 				</h1>
 			</div>
-			<div class="nav-toggle ">
+			<div class="nav-toggle fade-down">
 				<span class="visually-hidden">Menu</span>
 				
 				<?xml version='1.0' encoding='iso-8859-1'?>
@@ -131,7 +131,7 @@
 		})
 
 		setTimeout(function(){
-        	$('.site-header').addClass('fade-in');
+        	$('.site-header').addClass('active');
         }, 1000);
 
 
@@ -142,38 +142,22 @@
 				<div class="container">
 					<!-- includes/hero -->
 
-	<div class="hero" id="banner" >
+	<div class="hero fade-in" id="banner" >
 		<div class="slider">
 			
 				<div 
-					class="slide background-image" 
-					style="background-image: url('/john_cairo/uploads/2018/04/01/snaps.JPG');">
+					class="slide background-image fade-down" 
+					style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0472.JPG');">
 					<div class="slide__meta">
-						<h5><a href="">Some Post Title 1</a></h5>
+						<h5 class="fade-up double"><a href="/john_cairo/about.md">Rabbit Hole</a></h5>
 					</div>
 				</div>
 			
 				<div 
-					class="slide background-image" 
-					style="background-image: url('/john_cairo/uploads/2018/04/01/snaps.JPG');">
+					class="slide background-image fade-down" 
+					style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0464.JPG');">
 					<div class="slide__meta">
-						<h5><a href="">Some Post Title 2</a></h5>
-					</div>
-				</div>
-			
-				<div 
-					class="slide background-image" 
-					style="background-image: url('/john_cairo/uploads/2018/04/01/snaps.JPG');">
-					<div class="slide__meta">
-						<h5><a href="">Some Post Title 3</a></h5>
-					</div>
-				</div>
-			
-				<div 
-					class="slide background-image" 
-					style="background-image: url('/john_cairo/uploads/2018/04/01/snaps.JPG');">
-					<div class="slide__meta">
-						<h5><a href="">Some Post Title 4</a></h5>
+						<h5 class="fade-up double"><a href="/john_cairo/_posts/2018-04-08-into-the-great-dome.md">Into the Great Dome</a></h5>
 					</div>
 				</div>
 			
@@ -185,15 +169,15 @@
 <script type="text/javascript">
 	$(document).ready(function () {
 		setTimeout(function(){
-        	$('.hero').addClass('fade-in');
+        	$('.hero').addClass('active');
         }, 1000);
-
 
 		// Slider
 	  	$('.hero .slider').slick({
 	    	dots: true,
 		  	infinite: true,
-		  	speed: 300,
+		  	// speed: 300,
+		  	fade: true,
 		  	dotsClass: 'custom_paging',
 		    customPaging: function (slider, i) {
 		        //FYI just have a look at the object to find available information
@@ -203,12 +187,88 @@
 		        return  (i + 1) + '/' + slider.slideCount;
 		    },
 		  	slidesToShow: 1,
-		  	prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>leftAsset 3</title><path d="M8.117,17.212a.881.881,0,1,0,1.253-1.24L3.019,9.622H23.976a.873.873,0,0,0,.877-.878.882.882,0,0,0-.877-.889H3.019L9.37,1.515a.9.9,0,0,0,0-1.253.878.878,0,0,0-1.253,0L.263,8.117a.863.863,0,0,0,0,1.24Z" style="fill:#fff"/></svg></button>',
-		  	nextArrow: '<button type="button" class="slick-arrow slick-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" style="fill:#fff"/></svg></button>'
+		  	prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>leftAsset 3</title><path d="M8.117,17.212a.881.881,0,1,0,1.253-1.24L3.019,9.622H23.976a.873.873,0,0,0,.877-.878.882.882,0,0,0-.877-.889H3.019L9.37,1.515a.9.9,0,0,0,0-1.253.878.878,0,0,0-1.253,0L.263,8.117a.863.863,0,0,0,0,1.24Z"/></svg></button>',
+		  	nextArrow: '<button type="button" class="slick-arrow slick-next"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></button>'
 	  	});
 	});
 </script>
 
+<!-- includes/featured-post -->
+
+
+
+
+<div class="featured-post scroll-trigger">
+	<div class="container">
+		<div class="grid_no_gutter">
+			<div class="grid__item one-whole medium-up--one-half desc fade-right double">
+				<div class="center-content inner-desc">
+					<h3 class="post-title">Into the Great Dome</h3>
+					<div class="desc">It’s a hug, Michael. I’m hugging you. Marry me. I care deeply for nature. Michael! There’s so many poorly chosen words in that sentence. As you may or may not know, Lindsay and I have hit a bit of a rough patch. Across from where? Across from where? He’ll want to use your yacht, and I don’t want this thing smelling like fish. I’m afraid I just blue myself. Marry me. That’s why you always leave a note! First place chick is hot, but has an attitude, doesn’t date magicians. There’s so many poorly chosen words in that sentence. I care deeply for...</div>
+				</div>
+			</div>
+			<div class="grid__item one-whole medium-up--one-half img fade-left double">
+				<div class="center-content inner-img">
+					<div class="background-image square" style="background-image: url();">
+						<a class="btn post-btn" href="/john_cairo/2018-04-08-into-the-great-dome/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(window).resize(function() {
+		    var desc = '.featured-post .grid__item .inner-desc',
+		        desc_cont = '.featured-post .grid__item.desc',
+		        $desc_height = $(desc).outerHeight(),
+		        img = '.featured-post .grid__item .inner-img',
+		        img_cont = '.featured-post .grid__item.img',
+		        $img_height = $(img).outerHeight(),
+		        plus = 200;
+		    $(desc_cont).css('min-height', $desc_height + plus);
+		    $(img_cont).css('min-height', $img_height + plus);
+		});
+		$(window).trigger('resize');
+	})
+</script>
+
+
+
+
+<!-- includes/featured-projects -->
+
+
+
+
+
+<div class="featured-projects scroll-trigger">
+	<div class="container padding">
+		<h2 class="h1 page-title fade-down">Recent Posts</h2>	
+		<div class="grid fade-down">
+			
+				<div class="grid__item small--one-whole medium--one-half large-up--one-quarter" data-date="2018-04-08 03:36:52 +0000">
+					<!-- includes/project-post -->
+<div class="project-post">
+	<a href="/john_cairo/2018-04-08-into-the-great-dome/">
+		<h4 class="tag"></h4>
+		
+		<div class="background-image square " style="background-image:url();" >
+		</div>
+		<div class="post-meta">
+			<span class="h3">Into the Great Dome</span>
+			<div class="underline"></div>
+			<span class="date">Apr 08, 2018</span>
+		</div>
+	</a>
+</div>
+				</div>
+			
+		</div>
+	</div>
+</div>
 
 
 
