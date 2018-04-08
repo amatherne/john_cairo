@@ -42,5 +42,15 @@
 		  	prevArrow: '<button type="button" class="slick-arrow slick-prev">{% include icon-left-arrow.html %}</button>',
 		  	nextArrow: '<button type="button" class="slick-arrow slick-next">{% include icon-right-arrow.html %}</button>'
 	  	});
+
+
+	  	var options = [
+		  {
+		    selector: '.hero', // Mandatory, CSS selector
+		    vh: 100,  // Mandatory, height in vh units
+		  }
+		];
+
+		var vhFix = new VHChromeFix(options);
 	});
 </script>
