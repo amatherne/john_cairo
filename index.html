@@ -43,7 +43,6 @@
 			</div>
 			<div class="nav-toggle fade-down">
 				<span class="visually-hidden">Menu</span>
-				
 				<?xml version='1.0' encoding='iso-8859-1'?>
 <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24">
   <g>
@@ -117,8 +116,6 @@
 		setTimeout(function(){
         	$('.site-header').addClass('active');
         }, 1000);
-
-
 	})
 </script>
 
@@ -130,26 +127,26 @@
 		<div class="slider">
 			
 				<div 
-					class="slide background-image fade-down" 
+					class="slide background-image" 
 					style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0464.JPG');">
 					<div class="slide__meta">
-						<h5 class="fade-up double"><a href="/john_cairo/_posts/2018-04-08-into-the-great-dome.md">Into the Great Dome</a></h5>
+						<h5 class="fade-right triple"><a href="/john_cairo/_posts/2018-04-08-into-the-great-dome.md">Into the Great Dome</a></h5>
 					</div>
 				</div>
 			
 				<div 
-					class="slide background-image fade-down" 
+					class="slide background-image" 
 					style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0466.JPG');">
 					<div class="slide__meta">
-						<h5 class="fade-up double"><a href="/john_cairo/_posts/2018-04-08-dystopian-jazzland.md">Dystopian Jazzland</a></h5>
+						<h5 class="fade-right triple"><a href="/john_cairo/_posts/2018-04-08-dystopian-jazzland.md">Dystopian Jazzland</a></h5>
 					</div>
 				</div>
 			
 				<div 
-					class="slide background-image fade-down" 
+					class="slide background-image" 
 					style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0472.JPG');">
 					<div class="slide__meta">
-						<h5 class="fade-up double"><a href="/john_cairo/about.md">Rabbit Hole</a></h5>
+						<h5 class="fade-right triple"><a href="/john_cairo/about.md">Rabbit Hole</a></h5>
 					</div>
 				</div>
 			
@@ -175,7 +172,7 @@
 		        //FYI just have a look at the object to find available information
 		        //press f12 to access the console in most browsers
 		        //you could also debug or look in the source
-		        console.log(slider);
+		        // console.log(slider);
 		        return  (i + 1) + '/' + slider.slideCount;
 		    },
 		  	slidesToShow: 1,
@@ -202,8 +199,9 @@
 			<div class="grid__item one-whole medium-up--one-half img fade-left double">
 				<div class="center-content inner-img">
 					<div class="background-image square" style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0473.JPG);">
-						<a class="btn post-btn" href="/john_cairo/2018-04-08-into-the-great-dome/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></a>
+						
 					</div>
+					<a class="btn post-btn" href="/john_cairo/2018-04-08-into-the-great-dome/"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></a>
 				</div>
 			</div>
 		</div>
@@ -219,9 +217,14 @@
 		        img = '.featured-post .grid__item .inner-img',
 		        img_cont = '.featured-post .grid__item.img',
 		        $img_height = $(img).outerHeight(),
-		        plus = 200;
+		        plus = 200,
+		        sm_plus = 100;
 		    $(desc_cont).css('min-height', $desc_height + plus);
 		    $(img_cont).css('min-height', $img_height + plus);
+		    if ($(window).width() < 767) {
+		    	$(desc_cont).css('min-height', $desc_height + sm_plus);
+		    	$(img_cont).css('min-height', $img_height + sm_plus);
+		    }
 		});
 		$(window).trigger('resize');
 	})
@@ -231,9 +234,6 @@
 
 
 <!-- includes/featured-projects -->
-
-
-
 
 
 <div class="featured-projects scroll-trigger">
@@ -318,7 +318,56 @@
 				</div>
 			</div>
 
-			
+			<!-- includes/footer -->
+<footer>
+    <div class="container">
+        <nav class="footer-nav">
+            <ul class="">
+                
+                    <li class="">
+                        <a href="/john_cairo/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/about/">
+                            About Me
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/music">
+                            Music
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/contact/">
+                            Contact
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>
+                &copy; 2018 John Cairo - All Rights Reserved<br>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'jxj0ifv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 		</div>
 		
 	</body>

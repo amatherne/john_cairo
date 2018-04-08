@@ -43,7 +43,6 @@
 			</div>
 			<div class="nav-toggle fade-down">
 				<span class="visually-hidden">Menu</span>
-				
 				<?xml version='1.0' encoding='iso-8859-1'?>
 <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24">
   <g>
@@ -117,41 +116,100 @@
 		setTimeout(function(){
         	$('.site-header').addClass('active');
         }, 1000);
-
-
 	})
 </script>
 
 			<div class="mainContent">
 				<div class="container">
 					<!-- layouts/page -->
-<div class="background-image page-banner fade-in" style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0473.JPG);">
-	<div class="grid">
-		<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right ">
-			<h1 class="fade-right">Into the Great Dome</h1>
-		</div>
+
+	<div class="slider">
 		
-			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-				<span class="tags fade-left">
-					
-				</span>
-				<span class="entry-date fade-left">Apr 08, 2018</span>
+			<div  
+				title="Test 1"
+				class="slide background-image" 
+				id="trigger-1" 
+				style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0473.JPG);">
+				<div class="right-overlay">
+					<div class="center-content">
+						<h3 class="h4">Test 1</h3>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="arrow-bg"></div>
 			</div>
 		
+			<div  
+				title="Test 2"
+				class="slide background-image" 
+				id="trigger-2" 
+				style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0471.JPG);">
+				<div class="right-overlay">
+					<div class="center-content">
+						<h3 class="h4">Test 2</h3>
+						<div>
+							
+						</div>
+					</div>
+				</div>
+				<div class="arrow-bg"></div>
+			</div>
+		
+
 	</div>
-</div>
-<div class="container thin padding fade-in">
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('.arrow-bg').on('mouseenter', function () {
+				$('.right-overlay').addClass('show');
+
+			})
+			$('.arrow-bg').on('mouseleave', function () {
+				setTimeout(function(){
+					$('.right-overlay').removeClass('show');
+		        }, 300);
+		        $('.slick-arrow').hover(function () {
+					$('.right-overlay').toggleClass('hold-show');
+				})
+			})
+			$('.right-overlay').hover(function () {
+				$(this).toggleClass('hold-show');
+			})
+
+			// Slider
+		  	$('.slider').slick({
+		    	dots: true,
+			  	infinite: true,
+			  	// speed: 300,
+			  	fade: true,
+			  	dotsClass: 'custom_paging',
+			    customPaging: function (slider, i) {
+			        //FYI just have a look at the object to find available information
+			        //press f12 to access the console in most browsers
+			        //you could also debug or look in the source
+			        // console.log(slider);
+			        return  (i + 1) + '/' + slider.slideCount;
+			    },
+			  	slidesToShow: 1,
+			  	prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>leftAsset 3</title><path d="M8.117,17.212a.881.881,0,1,0,1.253-1.24L3.019,9.622H23.976a.873.873,0,0,0,.877-.878.882.882,0,0,0-.877-.889H3.019L9.37,1.515a.9.9,0,0,0,0-1.253.878.878,0,0,0-1.253,0L.263,8.117a.863.863,0,0,0,0,1.24Z"/></svg></button>',
+			  	nextArrow: '<button type="button" class="slick-arrow slick-next"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></button>'
+		  	});
+		})
+	</script>
+
+
+<div class="container thin padding scroll-trigger">
 	<div class="grid">
-		<div class="grid__item small--hide medium--hide large-up--one-quarter fade-up">
-			<!-- includes/side-feed -->
-
-
-
-
-		</div>
-		<div class="grid__item one-whole large-up--one-half fade-up">
-			
+		<div class="grid__item one-whole  fade-down">
+			<div class="post-meta">
+				<h1 class="post-title fade-down ">Into the Great Dome</h1>
+				<span class="entry-date">Apr 08, 2018</span>
+			</div>
 			<div class="rte">
+				
+
 	            <p>It’s a hug, Michael. I’m hugging you. Marry me. I care deeply for nature. Michael! There’s so many poorly chosen words in that sentence. As you may or may not know, Lindsay and I have hit a bit of a rough patch.</p>
 
 <p>Across from where? Across from where? <strong>He’ll want to use your yacht, and I don’t want this thing smelling like fish.</strong> <em>I’m afraid I just blue myself.</em> Marry me.</p>
@@ -166,59 +224,78 @@
   <li>Well, what do you expect, mother?</li>
 </ol>
 
+
 	        </div>
-		</div>
-		<div class="grid__item one-whole large-up--one-quarter fade-up">
-			
-				<div class="gallery">
-					<h5 class="meta-title border-bottom">Gallery</h5>
-					
-						<div  class="box border-bottom" id="trigger-1">
-							<a title="Test 1" href="/john_cairo/uploads/2018/04/08/IMG-0473.JPG" class="background-image square" style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0473.JPG);">
-							</a>
-							<span class="caption">Test 1</span>
-						</div>
-					
-						<div  class="box " id="trigger-2">
-							<a title="Test 2" href="/john_cairo/uploads/2018/04/08/IMG-0471.JPG" class="background-image square" style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0471.JPG);">
-							</a>
-							<span class="caption">Test 2</span>
-						</div>
-					
-				</div>
-				<script type="text/javascript">
-					$(document).ready(function () {
-						$('.gallery .box .square').simpleLightbox();
-					})
-				</script>
-			
-		</div>
-		<div class="grid__item one-whole large-up--hide fade-up">
-			<!-- includes/side-feed -->
-
-
-
-
 		</div>
 	</div>
 </div>
 
 <script type="text/javascript">
-	$(document).ready(function () {
-		// $('.container.padding').addClass('fade-in');
-  //       $('.background-image.page-banner').addClass('fade-in');
-		setTimeout(function(){
-        	$('.container.padding').addClass('active');
-        	$('.background-image.page-banner').addClass('active');
-        }, 1000);
-	})
+	// $(document).ready(function () {
+	// 	setTimeout(function(){
+ //        	$('.container.padding').addClass('active');
+ //        	$('.background-image.page-banner').addClass('active');
+ //        }, 1000);
+	// })
 </script>
 
 
+
+
+		
 				</div>
 			</div>
 
-			
+			<!-- includes/footer -->
+<footer>
+    <div class="container">
+        <nav class="footer-nav">
+            <ul class="">
+                
+                    <li class="">
+                        <a href="/john_cairo/">
+                            Home
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/about/">
+                            About Me
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/music">
+                            Music
+                        </a>
+                    </li>
+                
+                    <li class="">
+                        <a href="/john_cairo/contact/">
+                            Contact
+                        </a>
+                    </li>
+                
+            </ul>
+        </nav>
+        <div class="copyright">
+            <p>
+                &copy; 2018 John Cairo - All Rights Reserved<br>
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'jxj0ifv',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
 		</div>
 		
 	</body>
