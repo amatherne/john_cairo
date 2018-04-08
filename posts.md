@@ -9,5 +9,4 @@ menu:
     identifier: _posts
     url: "/posts/"
     weight: 7
-    title: Galleries
 ---
