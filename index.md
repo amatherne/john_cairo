@@ -21,4 +21,5 @@ hero_button:
 show_news: false
 featured_post: _posts/2018-04-08-into-the-great-dome.md
 description: Blah Blah Blah
+slideshow: []
 ---
