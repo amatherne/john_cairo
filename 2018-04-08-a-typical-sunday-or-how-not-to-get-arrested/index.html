@@ -115,6 +115,66 @@
 				<div class="container">
 					<!-- layouts/page -->
 
+	<div class="slider">
+		
+			<div  
+				title=" He didn't like his trailer."
+				class="slide background-image" 
+				id="trigger-1" 
+				style="background-image: url(/john_cairo/uploads/2018/04/08/IMG-0466.JPG);">
+				<div class="right-overlay">
+					<div class="center-content">
+						<h3 class="h4"> He didn't like his trailer.</h3>
+						<div>
+							Now, when you do this without getting punched in the chest, you'll have more fun. First place chick is hot, but has an attitude, doesn't date magicians. It's a hug, Michael. I'm hugging you. No! I was ashamed to be SEEN with you. I like being with you.
+						</div>
+					</div>
+				</div>
+				<div class="arrow-bg"></div>
+			</div>
+		
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('.arrow-bg').on('mouseenter', function () {
+				$('.right-overlay').addClass('show');
+
+			})
+			$('.arrow-bg').on('mouseleave', function () {
+				setTimeout(function(){
+					$('.right-overlay').removeClass('show');
+		        }, 300);
+		        $('.slick-arrow').hover(function () {
+					$('.right-overlay').toggleClass('hold-show');
+				})
+			})
+			$('.right-overlay').hover(function () {
+				$(this).toggleClass('hold-show');
+			})
+
+			// Slider
+		  	$('.slider').slick({
+		    	dots: true,
+			  	infinite: true,
+			  	// speed: 300,
+			  	fade: true,
+			  	dotsClass: 'custom_paging',
+			    customPaging: function (slider, i) {
+			        //FYI just have a look at the object to find available information
+			        //press f12 to access the console in most browsers
+			        //you could also debug or look in the source
+			        // console.log(slider);
+			        return  (i + 1) + '/' + slider.slideCount;
+			    },
+			  	slidesToShow: 1,
+			  	prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>leftAsset 3</title><path d="M8.117,17.212a.881.881,0,1,0,1.253-1.24L3.019,9.622H23.976a.873.873,0,0,0,.877-.878.882.882,0,0,0-.877-.889H3.019L9.37,1.515a.9.9,0,0,0,0-1.253.878.878,0,0,0-1.253,0L.263,8.117a.863.863,0,0,0,0,1.24Z"/></svg></button>',
+			  	nextArrow: '<button type="button" class="slick-arrow slick-next"><svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" /></svg></button>'
+		  	});
+		})
+	</script>
+
 
 <div class="container thin padding scroll-trigger">
 	<div class="grid">
@@ -140,7 +200,9 @@
   <li>I don’t criticize you! And if you’re worried about criticism, sometimes a diet is the best defense.</li>
 </ol>
 
-<h3 id="theres-only-one-man-ive-ever-called-a-coward-and-thats-brian-doyle-murray-no-what-im-calling-you-is-a-television-actor">There’s only one man I’ve ever called a coward, and that’s Brian Doyle Murray. No, what I’m calling you is a television actor.</h3>
+<blockquote>
+  <h3 id="theres-only-one-man-ive-ever-called-a-coward-and-thats-brian-doyle-murray-no-what-im-calling-you-is-a-television-actor">There’s only one man I’ve ever called a coward, and that’s Brian Doyle Murray. No, what I’m calling you is a television actor.</h3>
+</blockquote>
 
 <p>There’s only one man I’ve ever called a coward, and that’s Brian Doyle Murray. No, what I’m calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn’t date magicians.</p>
 
