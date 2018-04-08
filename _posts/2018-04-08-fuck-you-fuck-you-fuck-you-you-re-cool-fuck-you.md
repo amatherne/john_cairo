@@ -3,7 +3,13 @@ layout: page
 title: Fuck you. Fuck you. Fuck you. YOU'RE COOL. Fuck You.
 date: 2018-04-08 06:20:40 +0000
 banner_image: "/uploads/2018/04/08/IMG-0465.JPG"
-gallery: []
+gallery:
+- image: "/uploads/2018/04/08/IMG-0464.JPG"
+  caption: It's called 'taking advantage.'
+  detail: As you may or may not know, Lindsay and I have hit a bit of a rough patch.
+    Whoa, this guy's straight? Marry me. No, I did not kill Kitty. However, I am going
+    to oblige and answer the nice officer's questions because I am an honest man with
+    no secrets to hide.
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
 
