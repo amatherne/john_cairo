@@ -225,12 +225,7 @@
 			.background-image {
 				filter: grayscale(0%);
 				box-shadow:0 0 32px 0px rgba($brandOne, 0.7);
-				&:after {
-					// background: linear-gradient(45deg,rgba($brandTwo,1) 25%, rgba($brandFour,0.3) 75%);
-					opacity:0;
-					// z-index:-1;
-					// transition: all .1s linear;
-				}
+				
 			}
 		}
 
@@ -286,6 +281,9 @@
 					.background-image {
 						filter: grayscale(0%);
 						box-shadow:0 0 32px 0px rgba($brandOne, 0.7);
+						&:after {
+							opacity:0;
+						}
 					}
 				}
 
