@@ -1,7 +1,7 @@
 title: John Cairo
 short_title: John Cairo
 description: 
-baseurl: /john-cairo/
+baseurl: /john_cairo/
 permalink: "/:path/"
 defaults:
   - scope:
