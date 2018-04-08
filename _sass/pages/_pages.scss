@@ -757,3 +757,15 @@
 
 
 
+.template--404 {
+	
+	.page-banner .center-content {
+		// font-size:1em;
+		@media screen and (max-width:$grid-medium - 1) {
+			font-size:1em !important;
+			.typewrite {
+				height:50px;
+			}
+		}
+	}
+}

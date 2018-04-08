@@ -4014,6 +4014,12 @@ footer {
       background: #191a4c;
       color: #f0f0f0; }
 
+@media screen and (max-width: 766px) {
+  .template--404 .page-banner .center-content {
+    font-size: 1em !important; }
+    .template--404 .page-banner .center-content .typewrite {
+      height: 50px; } }
+
 .template--projects .max-width,
 .template--posts .max-width {
   background-color: #90e5c9; }
