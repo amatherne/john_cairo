@@ -149,11 +149,19 @@
 				<div class="arrow-bg"></div>
 			</div>
 		
-
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function () {
 
+			// Target iframes to make them responsive
+			var img = $('img[src*="/uploads/"]');
+			img.each(function () {
+				var current = $(this).attr('src'),
+					abs = '/john_cairo/';
+				$(this).attr('src', abs + current);
+			})
+
+			// Slider hover info
 			$('.arrow-bg').on('mouseenter', function () {
 				$('.right-overlay').addClass('show');
 
@@ -200,8 +208,6 @@
 				<span class="entry-date">Apr 08, 2018</span>
 			</div>
 			<div class="rte">
-				
-
 	            <p>It’s a hug, Michael. I’m hugging you. Marry me. I care deeply for nature. Michael! There’s so many poorly chosen words in that sentence. As you may or may not know, Lindsay and I have hit a bit of a rough patch.</p>
 
 <p>Across from where? Across from where? <strong>He’ll want to use your yacht, and I don’t want this thing smelling like fish.</strong> <em>I’m afraid I just blue myself.</em> Marry me.</p>
@@ -222,20 +228,12 @@
 
 <p>Now, when you do this without getting punched in the chest, you’ll have more fun. First place chick is hot, but has an attitude, doesn’t date magicians. It’s a hug, Michael. I’m hugging you. No! I was ashamed to be SEEN with you. I like being with you.</p>
 
-
 	        </div>
 		</div>
 	</div>
 </div>
 
-<script type="text/javascript">
-	// $(document).ready(function () {
-	// 	setTimeout(function(){
- //        	$('.container.padding').addClass('active');
- //        	$('.background-image.page-banner').addClass('active');
- //        }, 1000);
-	// })
-</script>
+
 
 
 
