@@ -24,3 +24,6 @@ fields:
   - type: text
     name: caption
     label: Caption
+  - type: textarea
+    label: Detail
+    name: detail
