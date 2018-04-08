@@ -23,4 +23,6 @@ featured_post: _posts/2018-04-08-into-the-great-dome.md
 description: Blah Blah Blah
 slideshow:
 - image: "/uploads/2018/04/08/IMG-0464.JPG"
+  link: _posts/2018-04-08-into-the-great-dome.md
+  title: Into the Great Dome
 ---
