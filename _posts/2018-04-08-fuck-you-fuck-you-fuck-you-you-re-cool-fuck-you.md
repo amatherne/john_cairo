@@ -4,6 +4,11 @@ title: Fuck you. Fuck you. Fuck you. YOU'RE COOL. Fuck You.
 date: 2018-04-08 06:20:40 +0000
 banner_image: "/uploads/2018/04/08/IMG-0465.JPG"
 gallery:
+- image: "/uploads/2018/04/08/IMG-0461.JPG"
+  caption: I'm half machine. I'm a monster.
+  detail: I've opened a door here that I regret. I'm half machine. I'm a monster.
+    That's what it said on 'Ask Jeeves.' I've opened a door here that I regret. Did
+    you enjoy your meal, Mom? You drank it fast enough.
 - image: "/uploads/2018/04/08/IMG-0468.JPG"
   caption: Steve Holt
   detail: As you may or may not know, Lindsay and I have hit a bit of a rough patch.
