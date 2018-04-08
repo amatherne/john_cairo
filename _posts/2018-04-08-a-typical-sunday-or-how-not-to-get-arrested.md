@@ -2,7 +2,7 @@
 layout: page
 title: 'A Typical Sunday: or how not to get arrested'
 date: 2018-04-08 06:19:36 +0000
-banner_image: "/uploads/2018/04/08/IMG-0469.JPG"
+banner_image: "/uploads/2018/04/08/IMG-0468.JPG"
 gallery: []
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
