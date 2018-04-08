@@ -1,7 +1,7 @@
-title: Austin Matherne | Web Development | Musician
-short_title: Austin Matherne
+title: John Cairo
+short_title: John Cairo
 description: 
-baseurl: /forestry-demo/
+baseurl: /john-cairo/
 permalink: "/:path/"
 defaults:
   - scope:
@@ -14,17 +14,8 @@ defaults:
     values:
       layout: post
 collections:
-  people:
-    output: false
-    permalink: "/about/:path/"
   posts:
     output: false
-  projects:
-    output: true
-  blogs:
-    output: true
-  musics:
-    output: true
 # tag_page_layout: tag_page
 # tag_page_dir: tag
 jekyll-archives:
