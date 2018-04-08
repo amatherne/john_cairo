@@ -28,8 +28,9 @@
 			<div class="grid__item one-whole medium-up--one-half img fade-left double">
 				<div class="center-content inner-img">
 					<div class="background-image square" style="background-image: url({{ f_image | absolute_url }});">
-						<a class="btn post-btn" href="{{ f_url | absolute_url }}">{% include icon-right-arrow.html %}</a>
+						
 					</div>
+					<a class="btn post-btn" href="{{ f_url | absolute_url }}">{% include icon-right-arrow.html %}</a>
 				</div>
 			</div>
 		</div>
@@ -45,9 +46,14 @@
 		        img = '.featured-post .grid__item .inner-img',
 		        img_cont = '.featured-post .grid__item.img',
 		        $img_height = $(img).outerHeight(),
-		        plus = 200;
+		        plus = 200,
+		        sm_plus = 100;
 		    $(desc_cont).css('min-height', $desc_height + plus);
 		    $(img_cont).css('min-height', $img_height + plus);
+		    if ($(window).width() < 767) {
+		    	$(desc_cont).css('min-height', $desc_height + sm_plus);
+		    	$(img_cont).css('min-height', $img_height + sm_plus);
+		    }
 		});
 		$(window).trigger('resize');
 	})

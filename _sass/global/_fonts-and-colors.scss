@@ -4,6 +4,7 @@
 	    background:#FAFAFA;
 	    .max-width {
 			background-color:$bodyBG;
+			background:linear-gradient($brandFour, $brandTwo);
 		}
 	    font-family:$bodyFont;
 	    color:$bodyTextColor;
@@ -93,13 +94,14 @@
 		.rte {
 
 			margin:1em auto;
-			max-width:800px;
+			max-width:700px;
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	font-size: modular-scale((6 - $i), $bodyFontSize, 1.4);
+			    	font-size: modular-scale((4 - $i), $bodyFontSize, 1.5);
 			    	font-weight:900;
-			    	letter-spacing:-0.05em;
+			    	letter-spacing:0em;
 			    	margin-bottom:($bodyLineHeight * 0.1);
+			    	font-family:$bodyFont;
 			  	}
 			}
 			p {
@@ -114,11 +116,35 @@
 				}
 			}
 			blockquote {
-		    	border-left:3px solid $borderColor;
+		    	// border-left:3px solid $brandOne;
 		    	padding:($bodyLineHeight * 2);
-		    	background:$brandThree;
-		    	color:$brandFive;
+		    	background:$brandOne;
+		    	background:linear-gradient(45deg,$brandFive 25%, $brandOne 75%);
+		    	color:$brandTwo;
 		    	margin:($bodyLineHeight * 2) 0;
+		    	position:relative;
+		    	&:after {
+					content:'';
+					position:absolute;
+					top:0;
+					left:-($bodyLineHeight * 0.5);
+					right:0;
+					bottom:0;
+					width:3px;
+					height:100%;
+					background:$brandOne;
+					opacity:1;
+					z-index:1;
+				}
+				p {
+					transform:translateX(0) !important;
+					font-family:$headlineFont;
+					text-transform:uppercase;
+					font-weight:400;
+					color:$brandTwo;
+					letter-spacing:0.1em;
+					font-size:1.2em;
+				}
 			}
 		}
 

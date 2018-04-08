@@ -8,14 +8,14 @@
 	$brandFour:#f0f0f0;
 	$brandFive:#191a4c;
 
-	$bodyBG:$brandFour;
-	$bodyTextColor:$brandFive;
-	$borderColor:lighten($brandFive,10%);
+	$bodyBG:$brandTwo;
+	$bodyTextColor:$brandOne;
+	$borderColor:lighten($brandOne,20%);
 
-	$linkColor:$brandThree;
-	$linkColorHover:lighten($brandThree,15%);
+	$linkColor:darken($brandThree,10%);
+	$linkColorHover:$brandThree;
 
-	$navLinkColor:$brandFive;
+	$navLinkColor:$brandTwo;
 
 // Fonts
 // -----

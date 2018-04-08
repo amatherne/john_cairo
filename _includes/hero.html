@@ -4,10 +4,10 @@
 		<div class="slider">
 			{% for slide in page.slideshow %}
 				<div 
-					class="slide background-image fade-down" 
+					class="slide background-image" 
 					style="background-image: url('{{ slide.image | absolute_url }}');">
 					<div class="slide__meta">
-						<h5 class="fade-up double"><a href="{{ slide.link | absolute_url }}">{{ slide.title }}</a></h5>
+						<h5 class="fade-right triple"><a href="{{ slide.link | absolute_url }}">{{ slide.title }}</a></h5>
 					</div>
 				</div>
 			{% endfor %}
@@ -33,7 +33,7 @@
 		        //FYI just have a look at the object to find available information
 		        //press f12 to access the console in most browsers
 		        //you could also debug or look in the source
-		        console.log(slider);
+		        // console.log(slider);
 		        return  (i + 1) + '/' + slider.slideCount;
 		    },
 		  	slidesToShow: 1,

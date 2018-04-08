@@ -1,16 +1,10 @@
 <!-- includes/side-feed -->
-{% assign parts = page.url | split: "/" %}
-{% for part in parts offset: 1 limit: 1 %}
-	{% assign feed = part %}
-{% endfor %}
-{% if feed contains 'projects' or feed contains 'blogs' or feed contains 'musics' and site[feed]size > 0 %}
-	<div class="related-posts">
-		<h5 class="meta-title border-bottom">Related Posts</h5>
-		{% for p in site[feed] %}
-			<a class="related-post border-left" href="{{ p.url | absolute_url }}">
-				<h5 class="related-title">{{ p.title }}</h5>
-				<span class="related-date">{{ p.date | date: "%b %d, %Y" }}</span>
-			</a>
-		{% endfor %}
-	</div>
-{% endif %}
+<div class="related-posts">
+	<h5 class="meta-title border-bottom">Related Posts</h5>
+	{% for p in site.posts %}
+		<a class="related-post border-left" href="{{ p.url | absolute_url }}">
+			<h5 class="related-title">{{ p.title }}</h5>
+			<span class="related-date">{{ p.date | date: "%b %d, %Y" }}</span>
+		</a>
+	{% endfor %}
+</div>

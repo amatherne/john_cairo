@@ -2,44 +2,100 @@
 layout: default
 ---
 <!-- layouts/page -->
-<div class="background-image page-banner fade-in" style="background-image: url({{ page.banner_image | absolute_url }});">
-	<div class="grid">
-		<div class="grid__item one-whole text-center {% unless page.show_date == false %}medium-up--one-half medium-up--text-right {% endunless %}">
-			<h1 class="fade-right">{{ page.title }}</h1>
-		</div>
-		{% unless page.show_date == false %}
-			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left">
-				<span class="tags fade-left">
-					{% for t in page.tags %}
-						<span>{{ t }}</span>{% unless forloop.last %}-{% endunless %}
-					{% endfor %}
-				</span>
-				<span class="entry-date fade-left">{{ page.date | date: "%b %d, %Y" }}</span>
-			</div>
-		{% endunless %}
-	</div>
-</div>
-<div class="container thin padding fade-in">
-	<div class="grid">
-		<div class="grid__item small--hide medium--hide large-up--one-quarter fade-up">
-			{% include side-feed.html %}
-		</div>
-		<div class="grid__item one-whole large-up--one-half fade-up">
-			{% if page.tech.size > 0 %}
-				<div class="tech">
-					<h5 class="meta-title border-bottom">Tech Used</h5>
-					<div>
-						{% for i in page.tech %}
-							<span>{{ i }}</span> {% unless forloop.last %}<span> / </span>{% endunless %}
-						{% endfor %}
+{% if page.gallery.size > 0 %}
+	<div class="slider">
+		{% for img in page.gallery %}
+			<div  
+				title="{{ img.caption }}"
+				class="slide background-image" 
+				id="trigger-{{ forloop.index }}" 
+				style="background-image: url({{ img.image | absolute_url }});">
+				<div class="right-overlay">
+					<div class="center-content">
+						<h3 class="h4">{{ img.caption }}</h3>
+						<div>
+							{{ img.detail }}
+						</div>
 					</div>
 				</div>
-			{% endif %}
+				<div class="arrow-bg"></div>
+			</div>
+		{% endfor %}
+
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function () {
+
+			$('.arrow-bg').on('mouseenter', function () {
+				$('.right-overlay').addClass('show');
+
+			})
+			$('.arrow-bg').on('mouseleave', function () {
+				setTimeout(function(){
+					$('.right-overlay').removeClass('show');
+		        }, 300);
+		        $('.slick-arrow').hover(function () {
+					$('.right-overlay').toggleClass('hold-show');
+				})
+			})
+			$('.right-overlay').hover(function () {
+				$(this).toggleClass('hold-show');
+			})
+
+			// Slider
+		  	$('.slider').slick({
+		    	dots: true,
+			  	infinite: true,
+			  	// speed: 300,
+			  	fade: true,
+			  	dotsClass: 'custom_paging',
+			    customPaging: function (slider, i) {
+			        //FYI just have a look at the object to find available information
+			        //press f12 to access the console in most browsers
+			        //you could also debug or look in the source
+			        // console.log(slider);
+			        return  (i + 1) + '/' + slider.slideCount;
+			    },
+			  	slidesToShow: 1,
+			  	prevArrow: '<button type="button" class="slick-arrow slick-prev">{% include icon-left-arrow.html %}</button>',
+			  	nextArrow: '<button type="button" class="slick-arrow slick-next">{% include icon-right-arrow.html %}</button>'
+		  	});
+		})
+	</script>
+{% endif %}
+
+<div class="container thin padding scroll-trigger">
+	<div class="grid">
+		<div class="grid__item one-whole  fade-down">
+			<div class="post-meta">
+				<h1 class="post-title fade-down ">{{ page.title }}</h1>
+				<span class="entry-date">{{ page.date | date: "%b %d, %Y" }}</span>
+			</div>
 			<div class="rte">
+				
+
 	            {{ content }}
+
 	        </div>
 		</div>
-		<div class="grid__item one-whole large-up--one-quarter fade-up">
+	</div>
+</div>
+
+<script type="text/javascript">
+	// $(document).ready(function () {
+	// 	setTimeout(function(){
+ //        	$('.container.padding').addClass('active');
+ //        	$('.background-image.page-banner').addClass('active');
+ //        }, 1000);
+	// })
+</script>
+
+{% comment %}		<div class="grid__item small--hide medium--hide large-up--one-quarter fade-up">
+			{% include side-feed.html %}
+		</div>{% endcomment %}
+
+
+		{% comment %}<div class="grid__item one-whole large-up--one-quarter fade-up">
 			{% if page.gallery.size > 0 %}
 				<div class="gallery">
 					<h5 class="meta-title border-bottom">Gallery</h5>
@@ -57,21 +113,4 @@ layout: default
 					})
 				</script>
 			{% endif %}
-		</div>
-		<div class="grid__item one-whole large-up--hide fade-up">
-			{% include side-feed.html %}
-		</div>
-	</div>
-</div>
-
-<script type="text/javascript">
-	$(document).ready(function () {
-		// $('.container.padding').addClass('fade-in');
-  //       $('.background-image.page-banner').addClass('fade-in');
-		setTimeout(function(){
-        	$('.container.padding').addClass('active');
-        	$('.background-image.page-banner').addClass('active');
-        }, 1000);
-	})
-</script>
-
+		</div>{% endcomment %}

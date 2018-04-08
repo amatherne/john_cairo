@@ -1,14 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="en">
 	{% assign layout_name = page.layout | handleize | downcase %}
+	
 	{% assign page_name_raw = page.title %}
 	{% assign page_handle = page_name_raw | replace: ' ', '-' %}
 	{% assign page_name = page_handle | downcase %}
-	{% assign page_color = page.color %}
+	{% comment %}{% assign page_color = page.color %}
 	{% assign col_handle = page_color | downcase %}
-	{% assign color = col_handle | replace: ' ','-' %}
+	{% assign color = col_handle | replace: ' ','-' %}{% endcomment %}
+	{% comment %}{% if color != '' %}color-{{ color }}{% endif %}{% endcomment %}
 	{% include head.html %}
-	<body class="template--{{ layout_name }} {% if color != '' %}color-{{ color }}{% endif %}" id="{{ page_name }}">
+	<body class="template--{{ layout_name }} " id="{{ page_name }}">
 		<div class="max-width">
 			{% include nav.html %}
 
@@ -18,7 +20,7 @@
 				</div>
 			</div>
 
-			{% comment %}{% include footer.html %}{% endcomment %}
+			{% include footer.html %}
 		</div>
 		
 	</body>

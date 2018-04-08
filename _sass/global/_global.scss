@@ -10,7 +10,7 @@
 	width:100%;
 	max-width:$width-site;
 	margin:0 auto;
-
+	position:relative;
 	&.padding {
 		padding:0 $bodyLineHeight;
 	}
@@ -47,12 +47,16 @@
 .scroll-trigger,
 .fade-in {
 	$amt:10px;
+	// $amt:3%;
 	.fade-down {
 		transform: translateY(-$amt);
 		opacity:0;
 		transition: all .3s linear;
 		&.double {
 			transform: translateY(-($amt * 2));
+		}
+		&.triple {
+			transform: translateY(-($amt * 3));
 		}
 	}
 	.fade-up {
@@ -62,6 +66,9 @@
 		&.double {
 			transform: translateY(($amt * 2));
 		}
+		&.triple {
+			transform: translateY(($amt * 3));
+		}
 	}
 	.fade-left {
 		transform: translateX(-$amt);
@@ -70,6 +77,9 @@
 		&.double {
 			transform: translateX(-($amt * 2));
 		}
+		&.triple {
+			transform: translateX(-($amt * 3));
+		}
 	}
 	.fade-right {
 		transform: translateX($amt);
@@ -77,6 +87,9 @@
 		transition: all .3s linear;
 		&.double {
 			transform: translateX(($amt * 2));
+		}
+		&.triple {
+			transform: translateX(($amt * 3));
 		}
 	}
 
