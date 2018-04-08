@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<!-- layouts/404 -->
+<div class="background-image page-banner fade-in" style="background-image: url({{ page.banner_image | absolute_url }});">
+	<div class="center-content">
+		{% comment %}<h1 class="fade-up">{{ page.title }}</h1>{% endcomment %}
+		<h1 class="fade-up">{{ page.heading }}</h1>
+		<div class="sub-header fade-up">
+				{{ page.sub_heading }}
+		</div>
+		<a class="btn" href="{{ '/' | absolute_url }}">Home</a>
+	</div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+		setTimeout(function(){
+        	$('.page-banner').addClass('active');
+        }, 1000);
+    });
+</script>

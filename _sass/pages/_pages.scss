@@ -2,7 +2,8 @@
 // -----
 
 .template--page,
-.template--contact {
+.template--contact,
+.template--404 {
 	.max-width {
 		background-color:$bodyBG;
 		background:linear-gradient($brandTwo, $brandFour);
@@ -269,47 +270,57 @@
 
 
 
-	// .page-banner {
-	// 	padding:($bodyLineHeight * 8) $bodyLineHeight;
-	// 	position:relative;
-	// 	z-index:1;
-	// 	margin-bottom:($bodyLineHeight * 2);
-	// 	&:before {
-	// 		content:'';
-	// 		position:absolute;
-	// 		top:0;
-	// 		left:0;
-	// 		right:0;
-	// 		bottom:0;
-	// 		width:100%;
-	// 		height:100%;
-	// 		z-index:0;
-	// 		background-color:$brandFive;
-	// 		mix-blend-mode:hard-light;
-	// 	}
-	// 	h1 {
-	// 	    letter-spacing: -0.05em;
-	// 		line-height: 0.9em;
-	// 		font-weight:900;
-	// 		margin:0;
-	// 		font-size:2.5em;
-	// 		padding:0 0 0 $bodyLineHeight;
-	// 	}
-	// 	h1,
-	// 	.entry-date, 
-	// 	.tags {
-	// 		color:$brandFour;
-	// 	}
-	// 	.entry-date, 
-	// 	.tags {
-	// 		display:block;
-	// 		margin:0 0;
-	// 		font-size:($bodyFontSize * 1.25);
-	// 	}
-	// 	.grid__item {
-	// 		vertical-align:middle;
-	// 	}
-	// }
+	.page-banner {
+		padding:($bodyLineHeight * 8) $bodyLineHeight;
+		position:relative;
+		z-index:1;
+		// margin-bottom:($bodyLineHeight * 2);
+		height:80vh;
+		text-align:center;
+		&:before {
+			content:'';
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			width:100%;
+			height:100%;
+			z-index:0;
+			opacity:0.4;
+			// opacity:1;
+			// background-color:$brandTwo;
+			mix-blend-mode:multiply;
+			background-color:$brandFive;
+			background:linear-gradient(45deg,rgba($brandOne,1), $brandFive);
+
+		}
+		h1 {
+		    // letter-spacing: -0.05em;
+			line-height: 0.9em;
+			font-weight:900;
+			margin:0;
+			font-size:3.5em;
+			// padding:0 0 0 $bodyLineHeight;
+		}
+		.center-content {
+			width:80%;
+			font-size:2em;
+		}
+		h1,
+		.sub-header {
+			color:$brandTwo;
+		}
+		.sub-header {
+			display:block;
+			margin:$bodyLineHeight 0 ;
+			font-size:($bodyFontSize * 1.25);
+			line-height:1.3em;
+		}
+		.grid__item {
+			vertical-align:middle;
+		}
+	}
 
 	// .meta-title {
 	// 	padding:($bodyLineHeight * 0.15);
