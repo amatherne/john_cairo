@@ -3313,10 +3313,6 @@ footer {
   .template--404 .img:hover .background-image {
     filter: grayscale(0%);
     box-shadow: 0 0 32px 0px rgba(3, 12, 38, 0.7); }
-    .template--page .img:hover .background-image:after,
-    .template--contact .img:hover .background-image:after,
-    .template--404 .img:hover .background-image:after {
-      opacity: 0; }
 @media screen and (min-width: 992px) {
   .template--page .rte h1, .template--page .rte .h1,
   .template--contact .rte h1,
@@ -3408,6 +3404,10 @@ footer {
     .template--404 .rte .img:hover .background-image {
       filter: grayscale(0%);
       box-shadow: 0 0 32px 0px rgba(3, 12, 38, 0.7); }
+      .template--page .rte .img:hover .background-image:after,
+      .template--contact .rte .img:hover .background-image:after,
+      .template--404 .rte .img:hover .background-image:after {
+        opacity: 0; }
   .template--page .rte blockquote,
   .template--contact .rte blockquote,
   .template--404 .rte blockquote {
