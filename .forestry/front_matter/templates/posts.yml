@@ -3,8 +3,21 @@ pages:
 - _posts/2018-04-08-into-the-great-dome.md
 hide_body: false
 fields:
+- type: file
+  name: banner_image
+  label: Banner Image
 - name: layout
   label: Layout
   type: text
-  hidden: false
+  hidden: true
   default: post
+- type: field_group_list
+  name: gallery
+  label: Gallery
+  fields:
+  - type: file
+    name: image
+    label: image
+  - type: text
+    name: caption
+    label: Caption
