@@ -27,3 +27,5 @@ fields:
   - type: textarea
     label: Detail
     name: detail
+    config:
+      wysiwyg: true
