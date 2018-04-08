@@ -186,7 +186,55 @@
 		margin:($bodyLineHeight * 0.5) 0 ($bodyLineHeight * 2);
 		font-size:($bodyFontSize * 1.25);
 	}
-	
+	.img {
+		// transform:translateX($pull_perc * 2);
+		margin:($bodyLineHeight * 2) 0;
+		position:relative;
+		.background-image {
+			border:1vw solid $brandTwo;
+			box-shadow:0px 0px 30px 0px rgba($brandOne, 0.5);
+			filter: grayscale(0%);	
+			transition: all .1s linear;
+			position:relative;
+			padding-top:56% !important;
+			
+		}
+		.img-info {
+			// position:absolute;
+			// bottom:($bodyLineHeight * 1);
+			// // left:-($bodyLineHeight * 3);
+			// transform:translateX($bodyLineHeight);
+			position:relative;
+			width:90%;
+			max-width:550px;
+			margin:0 auto;
+			opacity:1;
+			transition: all .2s linear;
+
+			h3 ,
+			.caption {
+				transform:translateX(0);
+				text-shadow:0px 0px 3px rgba($brandFour,0.75);
+			}
+		}
+		
+		&:hover {
+			.img-info {
+				// opacity:0;
+			}
+			.background-image {
+				filter: grayscale(0%);
+				box-shadow:0 0 32px 0px rgba($brandOne, 0.7);
+				&:after {
+					// background: linear-gradient(45deg,rgba($brandTwo,1) 25%, rgba($brandFour,0.3) 75%);
+					opacity:0;
+					// z-index:-1;
+					// transition: all .1s linear;
+				}
+			}
+		}
+
+	}
 	.rte {
 		@media screen and (min-width:$grid-large) {
 			$pull_perc:15%;
@@ -201,10 +249,51 @@
 			form {
 				transform:translateX(-$pull_perc);
 			}
-			img {
+			.img {
 				transform:translateX($pull_perc * 2);
+				margin:($bodyLineHeight * 4) 0;
+				.background-image {
+					filter: grayscale(80%);	
+					&.overlay:after {
+						content:'';
+						position:absolute;
+						top:0;
+						left:0;
+						right:0;
+						bottom:0;
+						width:100%;
+						height:100%;
+						// background: linear-gradient(45deg,rgba($brandTwo,0.95) 25%, rgba($brandFour,0.2) 5%);
+						background:linear-gradient(25deg, $brandTwo 3%,rgba($brandFive, 0.3) 70%);
+						opacity:1;
+						z-index:-1;
+						transition: all .2s linear;
+					}
+				}
+				.img-info {
+					max-width:300px;
+					margin:0;
+					position:absolute;
+					bottom:($bodyLineHeight * 1);
+					transform:translateX(-($pull_perc * 3));
+
+				}
+				
+				&:hover {
+					.img-info {
+						opacity:0;
+					}
+					.background-image {
+						filter: grayscale(0%);
+						box-shadow:0 0 32px 0px rgba($brandOne, 0.7);
+					}
+				}
+
 			}
+			
 			blockquote {
+				margin:($bodyLineHeight * 4) 0;
+
 				transform:translateX($pull_perc);
 				p,
 				ol, 
