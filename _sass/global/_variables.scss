@@ -2,24 +2,29 @@
 // ------
 	
 
-	$green:#008988;
-	$red:#d96459;
-	$orange:#f2ae72;
-	$beige:#f8f8dd;
-	$dark:#333745;
+	$brandOne:#030c26;
+	$brandTwo:#ffffff;
+	$brandThree:#90e5c9;
+	$brandFour:#f0f0f0;
+	$brandFive:#191a4c;
 
-	$bodyBG:$beige;
-	$bodyTextColor:$dark;
-	$borderColor:lighten($dark,10%);
+	$bodyBG:$brandFour;
+	$bodyTextColor:$brandFive;
+	$borderColor:lighten($brandFive,10%);
 
-	$linkColor:$orange;
-	$linkColorHover:lighten($orange,15%);
+	$linkColor:$brandThree;
+	$linkColorHover:lighten($brandThree,15%);
 
-	$navLinkColor:$dark;
+	$navLinkColor:$brandFive;
 
 // Fonts
 // -----
-	$bodyFont:"neuzeit-grotesk", sans-serif;
+	// $bodyFont:"neuzeit-grotesk", sans-serif;
+	$bodyFont:"semplicitapro",sans-serif;
+	$headlineFont:"semplicitapro",sans-serif;
+	$logoFont: "didoni-urw",serif;
+
+
 	$bodyLineHeight:1.5em;
 	$bodyFontSize:1em;
 
@@ -89,11 +94,11 @@
 
 	// Default Colors
 	$btnTextColor:             #fff ;
-	$btnBgColor:			   $green ;
+	$btnBgColor:			   $brandOne ;
 	$btnBorderColor:		   #fff ;
-	$btnTextHoverColor:        $green;
+	$btnTextHoverColor:        $brandOne;
 	$btnBgHoverColor:		   #fff ;
-	$btnBorderHoverColor:	   $green ;
+	$btnBorderHoverColor:	   $brandOne ;
 
 	// // Secondary Colors
 	// $sec_btnTextColor:         {{ settings.sec_btn_text_color }} ;

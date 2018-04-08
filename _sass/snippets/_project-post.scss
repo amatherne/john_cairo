@@ -15,7 +15,7 @@
 		}
 		
 		.background-image {
-			border: 1vw solid $beige;
+			border: 1vw solid $brandFour;
 			box-shadow:5px 6px 7px $shadow;
 			transition:all .1s linear;
 			padding-top: calc(100% - 2vw) !important;
@@ -33,13 +33,13 @@
 		.tag, 
 		.h3,
 		.date {
-			color:$dark;
+			color:$brandFive;
 			text-shadow:1px 2px 3px $shadow;
 			transition:all .1s linear;
 
 		}
 		.underline {
-			background-color:$dark;
+			background-color:$brandFive;
 			height:1px;
 			width:90%;
 			margin:($bodyLineHeight / 2) auto;
@@ -50,17 +50,17 @@
 			text-decoration:none;
 			&:hover {
 				.background-image {
-					border: 1vw solid $beige;
+					border: 1vw solid $brandFour;
 					box-shadow:1px 3px 5px $shadowHover;
 				}
 				.underline {
-					background-color:$beige;
+					background-color:$brandFour;
 					box-shadow:1px 1px 2px $shadowHover;
 				}
 				.tag, 
 				.h3,
 				.date {
-					color:$beige;
+					color:$brandFour;
 					text-shadow:1px 1px 2px $shadowHover;
 
 				}

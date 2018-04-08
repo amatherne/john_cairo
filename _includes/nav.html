@@ -11,15 +11,20 @@
 							<span class="visually-hidden">{{ site.short_title }}</span>
 							<img src="{{ logo | absolute_url }}">
 						{% else %}
-							{{ site.short_title }}
+							<span class="main_title">{{ site.short_title }}</span>
+							<span class="sub_title">New Orleans Based Photographer</span>
 						{% endif %}
 					</a>
 				</h1>
 			</div>
-			<div class="nav-toggle medium-up--hide">Menu</div>
+			<div class="nav-toggle ">
+				<span class="visually-hidden">Menu</span>
+				{% comment %}<img src="{{ '/img/menu.svg' | absolute_url }}" />{% endcomment %}
+				{% include icon-menu-btn.html %}
+			</div>
 			<div class="grid__item small--text-center medium-up--text-right small--one-whole medium--two-thirds large-up--four-fifths">
 				<nav class="main-nav">
-					<div class="nav-toggle close medium-up--hide">Close</div>
+					<div class="nav-toggle close ">Close</div>
 					<ul class="">
 						{% for link in site.menus.navigation %}
 							<li class="{% if link.children %}nested {% endif %}{% if url == link.url %}current{% endif %}">

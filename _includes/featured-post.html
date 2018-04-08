@@ -14,34 +14,32 @@
 		{% endif %}
 	{% endfor %}
 {% endfor %}
-{% if feed contains 'projects' or feed contains 'blogs' or feed contains 'musics' %}
-	<div class="featured-post scroll-trigger">
-		<div class="container">
-			<h2 class="section-title fade-down">Featured</h2>	
-			<div class="grid">
-				<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right vert-middle fade-right">
-					<h3 class="post-title">{{ f_title }}</h3>
-				</div>
-				<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left vert-middle fade-left">
-					<span class="tags">
-						{{ f_tag }}
-					</span>
-					<span class="entry-date">{{ f_date | date: "%b %d, %Y" }}</span>
-				</div>
-				<div class="grid__item one-whole medium-up--one-half fade-right">
-					<div>{{ f_excpt | strip_html | truncatewords: 140 }}</div>
-					<a class="btn right" href="{{ f_url | absolute_url }}">See Full Post</a>
-				</div>
-				<div class="grid__item one-whole medium-up--one-half fade-left">
-					<div class="background-image square" style="background-image: url({{ f_image | absolute_url }});"></div>
-				</div>
+<div class="featured-post scroll-trigger">
+	<div class="container">
+		<h2 class="section-title fade-down">Featured</h2>	
+		<div class="grid">
+			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right vert-middle fade-right">
+				<h3 class="post-title">{{ f_title }}</h3>
+			</div>
+			<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left vert-middle fade-left">
+				<span class="tags">
+					{{ f_tag }}
+				</span>
+				<span class="entry-date">{{ f_date | date: "%b %d, %Y" }}</span>
+			</div>
+			<div class="grid__item one-whole medium-up--one-half fade-right">
+				<div>{{ f_excpt | strip_html | truncatewords: 140 }}</div>
+				<a class="btn right" href="{{ f_url | absolute_url }}">See Full Post</a>
+			</div>
+			<div class="grid__item one-whole medium-up--one-half fade-left">
+				<div class="background-image square" style="background-image: url({{ f_image | absolute_url }});"></div>
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function () {
-	       	// $('.featured-post').addClass('scroll-trigger');
-		})
-	</script>
-{% endif %}
+</div>
+<script type="text/javascript">
+	$(document).ready(function () {
+       	// $('.featured-post').addClass('scroll-trigger');
+	})
+</script>
 

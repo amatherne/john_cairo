@@ -3,7 +3,7 @@
 
 .template--page {
 	.max-width {
-		background-color:$beige;
+		background-color:$brandFour;
 	}
 	.mainContent {
 		padding-top:($bodyLineHeight * 4.5);
@@ -13,15 +13,15 @@
 
 			li {
 				a {
-					color:$dark;
+					color:$brandFive;
 				}
 			}
 		}
 		.main-nav.show ul li a {
-			color:$beige;
+			color:$brandFour;
 		}
 		.nav-toggle:not(.close) {
-			color:$dark;
+			color:$brandFive;
 		}
 	}
 
@@ -41,7 +41,7 @@
 			width:100%;
 			height:100%;
 			z-index:0;
-			background-color:$dark;
+			background-color:$brandFive;
 			mix-blend-mode:hard-light;
 		}
 		h1 {
@@ -55,7 +55,7 @@
 		h1,
 		.entry-date, 
 		.tags {
-			color:$beige;
+			color:$brandFour;
 		}
 		.entry-date, 
 		.tags {
@@ -94,10 +94,10 @@
 				font-weight:900;
 				text-transform:uppercase;
 				margin:0;
-				color:$beige;
+				color:$brandFour;
 			}
 			.related-date {
-				color:$beige;
+				color:$brandFour;
 			}
 			&:hover {
 				opacity:1;
@@ -113,7 +113,7 @@
 			margin:0 0 ($bodyLineHeight * 2);
 		}
 		.background-image {
-			border:1px solid $beige;
+			border:1px solid $brandFour;
 		}
 		.caption {
 			display:block;
@@ -134,9 +134,9 @@
 
 	// Orange
 	&.color-orange-bg {
-		// background:$orange;
+		// background:$brandThree;
 		.max-width {
-			background-color:$orange;
+			background-color:$brandThree;
 		}
 
 		.border, 
@@ -144,42 +144,42 @@
 		.border-top, 
 		.border-left,
 		.border-right {
-			border-color:$dark;
+			border-color:$brandFive;
 		}
 		.site-header {
 			ul {
 
 				li {
 					a {
-						color:$dark;
+						color:$brandFive;
 					}
 				}
 			}
 		}
 		.related-posts {
 			.related-post {
-				background-color:$orange;
+				background-color:$brandThree;
 				.related-title,
 				.related-date {
-					color:$dark;
+					color:$brandFive;
 				}
 				&:hover {
-					background-color:lighten($orange,15%);
+					background-color:lighten($brandThree,15%);
 				}
 			}
 		}
 		.rte {
-			color:$dark;
+			color:$brandFive;
 			p {
-				color:$dark;
+				color:$brandFive;
 			}
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	color:$dark;
+			    	color:$brandFive;
 			  	}
 			}
 			a {
-				color:$red;
+				color:$brandTwo;
 				text-decoration: none;
 				&:hover {
 					color: $linkColorHover;
@@ -188,58 +188,58 @@
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	background:$dark;
-		    	color:$beige;
+		    	background:$brandFive;
+		    	color:$brandFour;
 			}
 		}
 	}
 
 	// white
 	&.color-white-bg {
-		// background:$beige;
+		// background:$brandFour;
 		.max-width {
-			background-color:$beige;
+			background-color:$brandFour;
 		}
 		.border, 
 		.border-bottom, 
 		.border-top, 
 		.border-left,
 		.border-right {
-			border-color:$dark;
+			border-color:$brandFive;
 		}
 		.meta-title {
-			color:$dark;
+			color:$brandFive;
 		}
 		.site-header {
 			ul {
 
 				li {
 					a {
-						color:$dark;
+						color:$brandFive;
 					}
 				}
 			}
 		}
 		.related-posts {
 			.related-post {
-				background-color:$beige;
+				background-color:$brandFour;
 				.related-title,
 				.related-date {
-					color:$dark;
+					color:$brandFive;
 				}
 				&:hover {
-					background-color:lighten($beige,15%);
+					background-color:lighten($brandFour,15%);
 				}
 			}
 		}
 		.rte {
-			color:$dark;
+			color:$brandFive;
 			p {
-				color:$dark;
+				color:$brandFive;
 			}
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	color:$dark;
+			    	color:$brandFive;
 			  	}
 			}
 			a {
@@ -252,121 +252,121 @@
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	background:$green;
-		    	color:$beige;
+		    	background:$brandOne;
+		    	color:$brandFour;
 			}
 		}
 	}
 	// Orange
 	&.color-red-bg {
-		// background:$red;
+		// background:$brandTwo;
 		.max-width {
-			background-color:$red;
+			background-color:$brandTwo;
 		}
 		.border, 
 		.border-bottom, 
 		.border-top, 
 		.border-left,
 		.border-right {
-			border-color:$beige;
+			border-color:$brandFour;
 		}
 		.meta-title {
-			color:$beige;
+			color:$brandFour;
 		}
 		.site-header {
 			ul {
 
 				li {
 					a {
-						color:$beige;
+						color:$brandFour;
 					}
 				}
 			}
 		}
 		.related-posts {
 			.related-post {
-				background-color:$red;
+				background-color:$brandTwo;
 				.related-title,
 				.related-date {
-					color:$beige;
+					color:$brandFour;
 				}
 				&:hover {
-					background-color:lighten($red,15%);
+					background-color:lighten($brandTwo,15%);
 				}
 			}
 		}
 		.rte {
-			color:$beige;
+			color:$brandFour;
 			p {
-				color:$beige;
+				color:$brandFour;
 			}
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	color:$beige;
+			    	color:$brandFour;
 			  	}
 			}
 			a {
-				color: $dark;
+				color: $brandFive;
 				text-decoration: none;
 				&:hover {
-					color: $beige;
+					color: $brandFour;
 					text-decoration: underline;
 				}
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	background:$beige;
-		    	color:$red;
+		    	background:$brandFour;
+		    	color:$brandTwo;
 			}
 		}
 	}
 
 	// white
 	&.color-green-bg {
-		// background:$green;
+		// background:$brandOne;
 		.max-width {
-			background-color:$green;
+			background-color:$brandOne;
 		}
 		.border, 
 		.border-bottom, 
 		.border-top, 
 		.border-left,
 		.border-right {
-			border-color:$dark;
+			border-color:$brandFive;
 		}
 		.meta-title {
-			color:$dark;
+			color:$brandFive;
 		}
 		.site-header {
 			ul {
 
 				li {
 					a {
-						color:$dark;
+						color:$brandFive;
 					}
 				}
 			}
 		}
 		.related-posts {
 			.related-post {
-				background-color:$green;
+				background-color:$brandOne;
 				.related-title,
 				.related-date {
-					color:$dark;
+					color:$brandFive;
 				}
 				&:hover {
-					background-color:lighten($green,15%);
+					background-color:lighten($brandOne,15%);
 				}
 			}
 		}
 		.rte {
-			color:$dark;
+			color:$brandFive;
 			p {
-				color:$dark;
+				color:$brandFive;
 			}
 			@for $i from 1 through 6 {
 			  	h#{$i}, .h#{$i} {
-			    	color:$dark;
+			    	color:$brandFive;
 			  	}
 			}
 			a {
@@ -379,8 +379,8 @@
 			}
 			blockquote {
 		    	border-left:3px solid $borderColor;
-		    	background:$dark;
-		    	color:$beige;
+		    	background:$brandFive;
+		    	color:$brandFour;
 			}
 		}
 	}

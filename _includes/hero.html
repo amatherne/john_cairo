@@ -1,16 +1,16 @@
 <!-- includes/hero -->
 {% if page.banner_image != "" %}
-	<div class="hero" id="banner" style="background-image: url('{{ page.banner_image | absolute_url }}');">
-		<div class="center-content">
-			<h2 class="h1">{{ page.heading | default: page.title }}</h2>
-			{% if page.sub_heading and page.sub_heading != "" %}
-				<h3>{{ page.sub_heading }}</h3>
-			{% endif %}
-			{% if page.hero_button %}
-			<a href="{{ page.hero_button.href | absolute_url }}" class="btn" title="{{ page.hero_button.text }}">
-				{{ page.hero_button.text }}&nbsp;<i class="fa fa-chevron-right"></i>
-			</a>
-			{% endif %}
+	<div class="hero" id="banner" >
+		<div class="slider">
+			{% for i in (1..4) %}
+				<div 
+					class="slide background-image" 
+					style="background-image: url('{{ page.banner_image | absolute_url }}');">
+					<div class="slide__meta">
+						<h5><a href="">Some Post Title {{i}}</a></h5>
+					</div>
+				</div>
+			{% endfor %}
 		</div>
 	</div>
 {% endif %}
@@ -21,5 +21,24 @@
 		setTimeout(function(){
         	$('.hero').addClass('fade-in');
         }, 1000);
-	})
+
+
+		// Slider
+	  	$('.hero .slider').slick({
+	    	dots: true,
+		  	infinite: true,
+		  	speed: 300,
+		  	dotsClass: 'custom_paging',
+		    customPaging: function (slider, i) {
+		        //FYI just have a look at the object to find available information
+		        //press f12 to access the console in most browsers
+		        //you could also debug or look in the source
+		        console.log(slider);
+		        return  (i + 1) + '/' + slider.slideCount;
+		    },
+		  	slidesToShow: 1,
+		  	prevArrow: '<button type="button" class="slick-arrow slick-prev">{% include icon-left-arrow.html %}</button>',
+		  	nextArrow: '<button type="button" class="slick-arrow slick-next">{% include icon-right-arrow.html %}</button>'
+	  	});
+	});
 </script>

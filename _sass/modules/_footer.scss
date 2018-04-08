@@ -1,9 +1,9 @@
 
 footer {
 	text-align:center;
-	background-color:$dark;
+	background-color:$brandFive;
 	padding:($bodyLineHeight * 1.5) $bodyLineHeight;
-	color:$beige;
+	color:$brandFour;
 	.footer-nav {
 		ul {
 			margin:0 0 $bodyLineHeight;
@@ -17,7 +17,7 @@ footer {
 					text-align:center;
 					padding:($bodyLineHeight / 4) ($bodyLineHeight / 2);
 					text-decoration:none;
-					color:$red;
+					color:$brandTwo;
 					font-weight: 600;
     				text-transform: lowercase;
 				}
@@ -26,7 +26,7 @@ footer {
 	}
 	.copyright {
 		p {
-			color:$beige;
+			color:$brandFour;
 		}
 	}
 	@media screen and (max-width:$grid-medium) {

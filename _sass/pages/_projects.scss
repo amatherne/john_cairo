@@ -1,6 +1,6 @@
 .template--projects {
 	.max-width {
-		background-color:$orange;
+		background-color:$brandThree;
 	}
 	.mainContent {
 		padding-top:($bodyLineHeight * 4.5);
@@ -10,26 +10,26 @@
 
 			li {
 				a {
-					color:$dark;
+					color:$brandFive;
 				}
 			}
 		}
 		.main-nav.show ul li a {
-			color:$beige
+			color:$brandFour
 		}
 		.nav-toggle:not(.close) {
-			color:$dark;
+			color:$brandFive;
 		}
 	}
 	.page-title {
-		color:$dark;
+		color:$brandFive;
 	}
 
 }
 
 .template--musics {
 	.max-width {
-		background-color:$green;
+		background-color:$brandOne;
 	}
 	.mainContent {
 		padding-top:($bodyLineHeight * 4.5);
@@ -39,42 +39,42 @@
 
 			li {
 				a {
-					color:$beige;
+					color:$brandFour;
 				}
 			}
 		}
 		.main-nav.show ul li a {
-			color:$beige
+			color:$brandFour
 		}
 		.nav-toggle:not(.close) {
-			color:$beige;
+			color:$brandFour;
 		}
 	}
 	.project-post {
 		.background-image {
-			border: 1vw solid $beige;
+			border: 1vw solid $brandFour;
 		}
 		.tag, 
 		.h3,
 		.date {
-			color:$beige;
+			color:$brandFour;
 		}
 		.underline {
-			background-color:$beige;
+			background-color:$brandFour;
 		}
 		a {
 			text-decoration:none;
 			&:hover {
 				.background-image {
-					border: 1vw solid darken($beige,10%);
+					border: 1vw solid darken($brandFour,10%);
 				}
 				.underline {
-					background-color: darken($beige,10%);
+					background-color: darken($brandFour,10%);
 				}
 				.tag, 
 				.h3,
 				.date {
-					color: darken($beige,10%);
+					color: darken($brandFour,10%);
 
 				}
 			}
@@ -84,55 +84,55 @@
 
 .template--blogs {
 	.max-width {
-		background-color:$beige;
+		background-color:$brandFour;
 	}
 	.mainContent {
 		padding-top:($bodyLineHeight * 4.5);
 	}
 	.page-title {
-		color:$dark;
+		color:$brandFive;
 	}
 	.site-header {
 		ul {
 
 			li {
 				a {
-					color:$dark;
+					color:$brandFive;
 				}
 			}
 		}
 		.main-nav.show ul li a {
-			color:$beige
+			color:$brandFour
 		}
 		.nav-toggle:not(.close) {
-			color:$dark;
+			color:$brandFive;
 		}
 	}
 	.project-post {
 		.background-image {
-			border: 1vw solid $dark;
+			border: 1vw solid $brandFive;
 		}
 		.tag, 
 		.h3,
 		.date {
-			color:$dark;
+			color:$brandFive;
 		}
 		.underline {
-			background-color:$dark;
+			background-color:$brandFive;
 		}
 		a {
 			text-decoration:none;
 			&:hover {
 				.background-image {
-					border: 1vw solid lighten($dark,10%);
+					border: 1vw solid lighten($brandFive,10%);
 				}
 				.underline {
-					background-color: lighten($dark,10%);
+					background-color: lighten($brandFive,10%);
 				}
 				.tag, 
 				.h3,
 				.date {
-					color: lighten($dark,10%);
+					color: lighten($brandFive,10%);
 
 				}
 			}

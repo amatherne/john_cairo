@@ -22,14 +22,14 @@
 	.h1, .h2, .h3, .h4, .h5, .h6 {
 		margin: ($bodyLineHeight / 4) 0 ($bodyLineHeight / 2);
 		font-weight: $headlineFontWeight;
-		// font-family: $headlineFontFamily;
+		font-family: $headlineFont;
 		line-height: 1.1em;
 		color: $headlineFontColor;
 		letter-spacing: $headlineLetterSpacing;
 		text-rendering: optimizelegibility; // Fix the character spacing for headings
 		display:block;
 		a {
-			color: $headlineFontColor;
+			color:inherit;
 		}
 
 		&.secondary {
@@ -51,7 +51,7 @@
 	.page-title {
 		text-align:center;
 		margin:0 0 ($bodyLineHeight * 1);
-		color:$beige;
+		color:$brandFour;
 		font-weight:900;
 		letter-spacing: -0.05em;
 	}
@@ -116,8 +116,8 @@
 			blockquote {
 		    	border-left:3px solid $borderColor;
 		    	padding:($bodyLineHeight * 2);
-		    	background:$orange;
-		    	color:$dark;
+		    	background:$brandThree;
+		    	color:$brandFive;
 		    	margin:($bodyLineHeight * 2) 0;
 			}
 		}
