@@ -3,8 +3,13 @@ layout: page
 title: Dystopian Jazzland
 date: 2018-04-08 06:18:02 +0000
 gallery:
-- image: "/uploads/2018/04/08/IMG-0469.JPG"
 - image: "/uploads/2018/04/08/IMG-0470.JPG"
+  caption: 'What''s Spanish for "I know you speak English?" '
+  detail: No… but I'd like to be asked! Guy's a pro. Not tricks, Michael, illusions.
+    Say goodbye to these, because it's the last time! No… but I'd like to be asked!
+    Guy's a pro. Not tricks, Michael, illusions. Say goodbye to these, because it's
+    the last time!
+- image: "/uploads/2018/04/08/IMG-0469.JPG"
 banner_image: "/uploads/2018/04/08/IMG-0470.JPG"
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
