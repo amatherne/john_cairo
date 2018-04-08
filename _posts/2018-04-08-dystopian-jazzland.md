@@ -5,7 +5,7 @@ date: 2018-04-08 06:18:02 +0000
 gallery:
 - image: "/uploads/2018/04/08/IMG-0469.JPG"
 - image: "/uploads/2018/04/08/IMG-0470.JPG"
-banner_image: ''
+banner_image: "/uploads/2018/04/08/IMG-0470.JPG"
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
 
