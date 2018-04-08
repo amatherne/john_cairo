@@ -1,6 +1,6 @@
 ---
 title: Home
-banner_image: "/img/hero.JPG"
+banner_image: "/uploads/2018/04/01/snaps.JPG"
 layout: landing-page
 heading: Austin Matherne
 partners: []
@@ -19,6 +19,6 @@ hero_button:
   text: Contact Me
   link: contact.md
 show_news: false
-featured_post: _blogs/relax.html
+featured_post: _posts/2018-04-08-into-the-great-dome.md
 description: Blah Blah Blah
 ---
