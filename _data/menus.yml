@@ -1,10 +1,10 @@
 ---
 navigation:
 - identifier: 
-  url: "/"
-  weight: 1
-  title: Home
-- identifier: 
   url: "/music"
   weight: 5
   title: Music
+- identifier: 
+  url: "/"
+  weight: 1
+  title: Home
