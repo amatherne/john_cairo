@@ -8,16 +8,6 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: sub_heading
-  label: Sub heading
-  type: text
-  hidden: false
-  default: ''
-- name: layout
-  label: Layout
-  type: text
-  hidden: false
-  default: ''
 - type: select
   name: featured_post
   config:
@@ -25,3 +15,19 @@ fields:
       type: pages
       section: posts
   label: Featured Post
+- type: field_group
+  name: slideshow
+  label: Slideshow
+  fields:
+  - type: file
+    label: Image
+    name: image
+  - type: text
+    label: Title
+    name: title
+  - type: select
+    config:
+      source:
+        type: pages
+    label: Link
+    name: link
