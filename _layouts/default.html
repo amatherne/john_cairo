@@ -1,0 +1,27 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	{% assign layout_name = page.layout | handleize | downcase %}
+	{% assign page_name_raw = page.title %}
+	{% assign page_handle = page_name_raw | replace: ' ', '-' %}
+	{% assign page_name = page_handle | downcase %}
+	{% assign page_color = page.color %}
+	{% assign col_handle = page_color | downcase %}
+	{% assign color = col_handle | replace: ' ','-' %}
+	{% include head.html %}
+	<body class="template--{{ layout_name }} {% if color != '' %}color-{{ color }}{% endif %}" id="{{ page_name }}">
+		<div class="max-width">
+			{% include nav.html %}
+
+			<div class="mainContent">
+				<div class="container">
+					{{ content }}
+				</div>
+			</div>
+
+			{% include footer.html %}
+		</div>
+		<!-- Javascript -->
+		<script src="https://use.typekit.net/akz3yrt.js"></script>
+  		<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	</body>
+</html>

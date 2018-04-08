@@ -1,0 +1,36 @@
+title: Austin Matherne | Web Development | Musician
+short_title: Austin Matherne
+description: 
+baseurl: /forestry-demo/
+permalink: "/:path/"
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: page
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+collections:
+  people:
+    output: false
+    permalink: "/about/:path/"
+  posts:
+    output: false
+  projects:
+    output: true
+  blogs:
+    output: true
+  musics:
+    output: true
+# tag_page_layout: tag_page
+# tag_page_dir: tag
+jekyll-archives:
+  enabled: all
+  layout: "archive"
+plugins:
+  - jekyll-menus
+  - jekyll-feed
+  - jekyll-archives

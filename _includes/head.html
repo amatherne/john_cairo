@@ -1,0 +1,15 @@
+<!-- includes/head -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }} - {{ site.title }}</title>
+  <meta name="description" content="{% if .page.description %}{{ .page.description }}{% else %}{{ .site.description }}{% endif %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="{{ "/img/favicon.png" | absolute_url }}"/>
+
+  <link rel="stylesheet" href="{{ "/css/main.css" | absolute_url }}">
+
+	<script src="{{ "/js/main.js" | absolute_url }}" type="text/javascript"></script>
+	<script src="{{ "/js/vendor/lightbox.js" | absolute_url }}" type="text/javascript"></script>
+
+</head>

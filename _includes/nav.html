@@ -1,0 +1,86 @@
+<!-- includes/nav -->
+{% assign url = page.url | remove:'index.html' %}
+<header class="site-header ">
+	<div class="container">
+		<div class="grid">
+			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
+				<h1 class="logo">
+					<a href="{{ "/" | absolute_url }}">
+						{% assign logo = site.data.defaults.logo %}
+						{% if logo != ''  %}
+							<span class="visually-hidden">{{ site.short_title }}</span>
+							<img src="{{ logo | absolute_url }}">
+						{% else %}
+							{{ site.short_title }}
+						{% endif %}
+					</a>
+				</h1>
+			</div>
+			<div class="nav-toggle medium-up--hide">Menu</div>
+			<div class="grid__item small--text-center medium-up--text-right small--one-whole medium--two-thirds large-up--four-fifths">
+				<nav class="main-nav">
+					<div class="nav-toggle close medium-up--hide">Close</div>
+					<ul class="">
+						{% for link in site.menus.navigation %}
+							<li class="{% if link.children %}nested {% endif %}{% if url == link.url %}current{% endif %}">
+								{% if link.children %}
+									<ul class="first-level">
+										{% for child in link.children %}
+											<li>
+												{% if child.children %}
+													<ul class="second-level">
+														{% for child in child.children %}
+														<li>
+															<a href="{{ child.url | absolute_url }}">{{ child.title }}</a>
+														</li>
+														{% endfor %}
+													</ul>
+												{% endif %}
+												<a href="{{ child.url | absolute_url }}"{% if child.target %} target="_blank" {% endif %}>
+													{{ child.title }}
+													{% if child.childen %}
+														<i class='icon-right-dir-2'></i>
+													{% endif %}
+												</a>
+											</li>
+										{% endfor %}
+									</ul>
+								{% endif %}
+								<a href="{{ link.url | absolute_url }}"{% if link.target %} target="_blank" {% endif %}>
+									{{ link.title }}
+									{% if link.childen %}
+										<i class='icon-chevron-down'></i>
+									{% endif %}
+								</a>
+							</li>
+						{% endfor %}
+					</ul>
+					<ul>
+						<li>
+							<a href="{{ "/admin" | absolute_url }}">Login</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var toggle = $('.nav-toggle');
+			nav = $('.main-nav');
+			body = $('body');
+		toggle.on('click touch', function() {
+			nav.toggleClass('show');
+			body.toggleClass('locked');
+		})
+
+		setTimeout(function(){
+        	$('.site-header').addClass('fade-in');
+        }, 1000);
+
+
+	})
+</script>

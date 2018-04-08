@@ -1,0 +1,77 @@
+<!-- includes/featured-projects -->
+
+
+{% assign date_format = '%Y%m%d%H%M%S' %}
+{% assign width = 'small--one-whole medium--one-half large-up--one-quarter' %}
+{% comment %}
+	Blogs Loop
+{% endcomment %}
+{% for p in site.blogs limit: 2 %}
+	{% capture post %}
+		<div class="grid__item {{ width }}" data-date="{{ p.date | date: date_format }}">
+			{% include project-post.html %}
+		</div>
+	{% endcapture %}
+	{% assign all_blogs = all_blogs | append: post %}
+{% endfor %}
+
+{% comment %}
+	Projects Loop
+{% endcomment %}
+{% for p in site.projects limit: 2 %}
+	{% capture post %}
+		<div class="grid__item {{ width }}" data-date="{{ p.date | date: date_format }}">
+			{% include project-post.html %}
+		</div>
+	{% endcapture %}
+	{% assign all_projects = all_projects | append: post %}
+{% endfor %}
+
+{% comment %}
+	Music Loop
+{% endcomment %}
+{% for p in site.musics limit: 2 %}
+	{% capture post %}
+		<div class="grid__item {{ width }}" data-date="{{ p.date | date: date_format }}">
+			{% include project-post.html %}
+		</div>
+	{% endcapture %}
+	{% assign all_musics = all_musics | append: post %}
+{% endfor %}
+
+
+<div class="featured-projects scroll-trigger">
+	<div class="container padding">
+		<h2 class="h1 page-title fade-down">Recent Posts</h2>	
+		<div class="grid fade-down">
+			{% assign all_posts = all_posts | append: all_blogs | append: all_projects | append: all_musics %}
+		{% for p in all_posts %}
+			{{ p }}
+		{% endfor %}
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function () {
+		var $cont = $('#sort'),
+			$item = $cont.children('.grid__item');
+		$item.sort(function(a,b){
+			var an = b.getAttribute('data-date'),
+				bn = a.getAttribute('data-date');
+			if(an > bn) {
+				return 1;
+			}
+			if(an < bn) {
+				return -1;
+			}
+			return 0;
+		});
+		$item.detach().appendTo($cont);
+
+		// setTimeout(function(){
+  //       	$('.featured-projects').addClass('scroll-trigger');
+  //       }, 1000);
+	})
+</script>
