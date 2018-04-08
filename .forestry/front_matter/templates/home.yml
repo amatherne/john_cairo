@@ -15,19 +15,19 @@ fields:
       type: pages
       section: posts
   label: Featured Post
-- type: field_group
+- type: field_group_list
   name: slideshow
   label: Slideshow
   fields:
   - type: file
-    label: Image
     name: image
+    label: Image
   - type: text
-    label: Title
     name: title
+    label: Title
   - type: select
+    name: link
     config:
       source:
         type: pages
     label: Link
-    name: link
