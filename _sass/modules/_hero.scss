@@ -2,22 +2,36 @@
 // ====
 
 	.hero {
+		$maxHeight:1000px;
 		background-position:center;
 		background-repeat:no-repeat;
 		background-size:cover;
 		min-height:200px;
 		height:100vh;
-		max-height:900px;
+		max-height:$maxHeight;
 		position:relative;
 		z-index:1;
-		
+		&:after {
+			content:'';
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			width:100%;
+			height:100%;
+			// background-color:$brandTwo;
+			background:linear-gradient(45deg,$brandFive 25%, $brandOne 75%);
+			opacity:0.8;
+			z-index:-1;
+		}
 		.slide {
 			background-position:center;
 			background-repeat:no-repeat;
 			background-size:cover;
 			min-height:200px;
 			height:100vh;
-			max-height:900px;
+			max-height:$maxHeight;
 			position:relative;
 			z-index:1;
 			overflow:hidden;
@@ -31,7 +45,7 @@
 				width:100%;
 				height:100%;
 				// background-color:$brandTwo;
-				background:linear-gradient($brandOne, $brandFive);
+				background:linear-gradient(45deg,$brandFive 25%, $brandOne 75%);
 				opacity:0.8;
 				z-index:0;
 			}
@@ -39,7 +53,7 @@
 
 		.slick-arrow {
 			position:absolute;
-			bottom:$bodyLineHeight;
+			bottom:($bodyLineHeight * 1.5);
 			z-index:10;
 			background:transparent;
 			color:$brandTwo;
@@ -65,7 +79,8 @@
 		}
 		.custom_paging {
 			position:absolute;
-			bottom:$bodyLineHeight;
+			bottom:($bodyLineHeight * 1.5);
+
 			left:50%;
 			transform: translateX(-50%);
 			z-index:10;
@@ -78,7 +93,7 @@
 				transform: translate(-50%,-50%);
 				display:none;
 				color:$brandTwo;
-				font-family:$headlineFont;
+				// font-family:$headlineFont;
 				font-weight:600;
 				letter-spacing:0.5em;
 				&.slick-active {
@@ -126,10 +141,12 @@
 			height:50px;
 			h5 {
 				position:absolute;
-				right:$bodyLineHeight;
-				bottom:$bodyLineHeight;
+				right:($bodyLineHeight * 0.8);
+				bottom:($bodyLineHeight * 1.1);
+
 				z-index:15;
 				color:$brandTwo;
+				font-family:$bodyFont;
 				text-transform:uppercase;
 				font-size:1.3em;
 				margin:0;

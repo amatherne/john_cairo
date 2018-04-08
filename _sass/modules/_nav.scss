@@ -43,11 +43,12 @@
 				font-size:3.1em;
 				display:block;
 				margin:0;
+				font-weight:400;
 			}
 			.sub_title {
-				font-size:0.77em;
+				font-size:0.74em;
 				text-transform:uppercase;
-				font-family:$headlineFont;
+				font-family:$bodyFont;
 				display:block;
 				margin:0.65em 0 0;
 			}
@@ -56,81 +57,53 @@
 				display:block;
 			}
 		}
-		@media screen and (min-width:$grid-medium) {
-			// .main-nav {
-			// 	opacity:0;
-			// 	transform: translateY(-5%);
-			// 	transition: all .3s linear;
-			// }
-			// .logo {
-			// 	img {
-			// 		opacity:0;
-			// 		transform: translateY(-5%);
-			// 		transition:all .2s linear;
-			// 	}
-			// }
-			// &.fade-in {
-			// 	.main-nav {
-			// 		opacity:1;
-			// 		transform: translateY(0%);	
-			// 	}
-			// 	.logo {
-			// 		img {
-			// 			opacity:1;
-			// 			transform: translateY(0%);
-			// 		}
-			// 	}
-			// }
-		}
-		// @media screen and (max-width:$grid-medium - 1) {
-			.nav-toggle {
-				position:absolute;
-				top:($bodyLineHeight * 0.5);
-				left:($bodyLineHeight * 0.5);
-				padding:$bodyLineHeight;
+		.nav-toggle {
+			position:absolute;
+			top:($bodyLineHeight * 0.5);
+			left:($bodyLineHeight * 0.5);
+			padding:$bodyLineHeight;
+			color:$brandTwo;
+			line-height:1;
+			cursor:pointer;
+			img,
+			svg {
+				fill:currentColor;
+				width:30px;
+				height:30px;
+			}
+			&.close {
 				color:$brandTwo;
-				line-height:1;
-				cursor:pointer;
-				img,
-				svg {
-					fill:currentColor;
-					width:30px;
-					height:30px;
-				}
-				&.close {
-					color:$brandTwo;
-					background-color:$brandFive;
-					position:fixed;
-				}
-			}
-			.main-nav {
-				position:fixed;
-				top:0;
-				left:0;
-				width:100%;
-				max-width:300px;
-				height:100vh;
-				overflow:hidden;
-				overflow-y:auto;
 				background-color:$brandFive;
-				padding-top:($bodyLineHeight * 4);
-				opacity:0;
-				transform:translateX(-100%);
-				transition: all .05s linear;
-				li {
-					display:block;
-					padding:($bodyLineHeight * 1);
-					border-bottom:1px solid $borderColor;
-					&:first-of-type {
-						border-top:1px solid $borderColor;
-					}
-				}
-				&.show {
-					opacity:1;
-					transform:translateX(0%);
-					transition: transform .3s linear,
-								opacity .1s linear;
+				position:fixed;
+			}
+		}
+		.main-nav {
+			position:fixed;
+			top:0;
+			left:0;
+			width:100%;
+			max-width:300px;
+			height:100vh;
+			overflow:hidden;
+			overflow-y:auto;
+			background-color:$brandFive;
+			padding-top:($bodyLineHeight * 4);
+			opacity:0;
+			transform:translateX(-100%);
+			transition: all .05s linear;
+			li {
+				display:block;
+				padding:($bodyLineHeight * 1);
+				border-bottom:1px solid $borderColor;
+				&:first-of-type {
+					border-top:1px solid $borderColor;
 				}
 			}
-		// }
+			&.show {
+				opacity:1;
+				transform:translateX(0%);
+				transition: transform .3s linear,
+							opacity .1s linear;
+			}
+		}
 	}

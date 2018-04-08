@@ -156,7 +156,7 @@
 		padding: 8px 30px;
 		line-height: $bodyLineHeight !important;
 		cursor:pointer;
-		transition:all 150ms linear;
+		transition:all .1s linear;
 		text-decoration:none;
 		&:hover {
 			border:1px solid $btnBorderHoverColor !important;
@@ -165,6 +165,30 @@
 			color: $btnTextHoverColor !important;
 
 		}
+
+		// Post Button
+		// ==========
+		&.post-btn {
+			border:none !important;
+			color: $postBtnTextColor !important;
+			background-color:$postBtnBgColor !important;   
+			padding:($bodyLineHeight * 1);
+			position:relative;
+			svg {
+				position:absolute;
+				top:50%;
+				left:50%;
+				transform:translate(-50%,-50%);
+				// width:90%;
+			}
+
+			&:hover {
+				background-color: $postBtnTextColor !important;
+				color:$postBtnBgColor !important; 
+			}
+		}
+
+
 		// // Secondary
 		// // ---------
 		// &.secondary {
@@ -214,3 +238,43 @@
 			// background-color:white !important;
 		}
 	} 
+
+// Icons
+// =====
+
+	.icon {
+	    display: inline-block;
+	    width: 20px;
+	    height: 20px;
+	    // vertical-align: middle;
+	    fill: currentColor;
+
+	    .no-svg & {
+	        display: none;
+	    }
+	}
+
+	.icon--wide {
+	    width: 40px;
+	}
+
+	svg,
+	symbol {
+	    &.icon:not(.icon--full-color) {
+	        circle,
+	        ellipse,
+	        g,
+	        line,
+	        path,
+	        polygon,
+	        polyline,
+	        rect {
+	            fill: inherit;
+	            stroke: inherit;
+	        }
+	    }
+	}
+
+
+
+

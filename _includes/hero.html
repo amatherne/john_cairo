@@ -1,13 +1,13 @@
 <!-- includes/hero -->
 {% if page.banner_image != "" %}
-	<div class="hero" id="banner" >
+	<div class="hero fade-in" id="banner" >
 		<div class="slider">
-			{% for i in (1..4) %}
+			{% for slide in page.slideshow %}
 				<div 
-					class="slide background-image" 
-					style="background-image: url('{{ page.banner_image | absolute_url }}');">
+					class="slide background-image fade-down" 
+					style="background-image: url('{{ slide.image | absolute_url }}');">
 					<div class="slide__meta">
-						<h5><a href="">Some Post Title {{i}}</a></h5>
+						<h5 class="fade-up double"><a href="{{ slide.link | absolute_url }}">{{ slide.title }}</a></h5>
 					</div>
 				</div>
 			{% endfor %}
@@ -19,15 +19,15 @@
 <script type="text/javascript">
 	$(document).ready(function () {
 		setTimeout(function(){
-        	$('.hero').addClass('fade-in');
+        	$('.hero').addClass('active');
         }, 1000);
-
 
 		// Slider
 	  	$('.hero .slider').slick({
 	    	dots: true,
 		  	infinite: true,
-		  	speed: 300,
+		  	// speed: 300,
+		  	fade: true,
 		  	dotsClass: 'custom_paging',
 		    customPaging: function (slider, i) {
 		        //FYI just have a look at the object to find available information

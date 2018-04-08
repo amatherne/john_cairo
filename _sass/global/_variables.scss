@@ -20,8 +20,8 @@
 // Fonts
 // -----
 	// $bodyFont:"neuzeit-grotesk", sans-serif;
-	$bodyFont:"semplicitapro",sans-serif;
-	$headlineFont:"semplicitapro",sans-serif;
+	$bodyFont: "semplicitapro",sans-serif;
+	$headlineFont: "essonnes-display",serif;
 	$logoFont: "didoni-urw",serif;
 
 
@@ -124,3 +124,14 @@
 	// $iconImageHoverColor:      {{ settings.icon_text_hover_color }} ;
 	// $iconBgHoverColor:		   {{ settings.icon_bg_hover_color }} ;
 	// $iconBorderHoverColor:	   {{ settings.icon_border_hover_color }} ;
+
+
+	// Post Btn
+	$postBtnTextColor:             $brandOne ;
+	$postBtnBgColor:			   $brandThree ;
+	$postBtnTextHoverColor:        $brandThree;
+	$postBtnBgHoverColor:		   $brandOne;
+
+
+
+

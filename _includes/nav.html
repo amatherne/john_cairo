@@ -1,10 +1,10 @@
 <!-- includes/nav -->
 {% assign url = page.url | remove:'index.html' %}
-<header class="site-header ">
+<header class="site-header fade-in ">
 	<div class="container">
 		<div class="grid">
 			<div class="grid__item small--one-whole medium--one-third large-up--one-fifth small--text-center">
-				<h1 class="logo">
+				<h1 class="logo fade-down">
 					<a href="{{ "/" | absolute_url }}">
 						{% assign logo = site.data.defaults.logo %}
 						{% if logo != ''  %}
@@ -17,7 +17,7 @@
 					</a>
 				</h1>
 			</div>
-			<div class="nav-toggle ">
+			<div class="nav-toggle fade-down">
 				<span class="visually-hidden">Menu</span>
 				{% comment %}<img src="{{ '/img/menu.svg' | absolute_url }}" />{% endcomment %}
 				{% include icon-menu-btn.html %}
@@ -83,7 +83,7 @@
 		})
 
 		setTimeout(function(){
-        	$('.site-header').addClass('fade-in');
+        	$('.site-header').addClass('active');
         }, 1000);
 
 

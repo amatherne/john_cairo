@@ -51,21 +51,33 @@
 		transform: translateY(-$amt);
 		opacity:0;
 		transition: all .3s linear;
+		&.double {
+			transform: translateY(-($amt * 2));
+		}
 	}
 	.fade-up {
 		transform: translateY($amt);
 		opacity:0;
 		transition: all .3s linear;
+		&.double {
+			transform: translateY(($amt * 2));
+		}
 	}
 	.fade-left {
 		transform: translateX(-$amt);
 		opacity:0;
 		transition: all .3s linear;
+		&.double {
+			transform: translateX(-($amt * 2));
+		}
 	}
 	.fade-right {
 		transform: translateX($amt);
 		opacity:0;
 		transition: all .3s linear;
+		&.double {
+			transform: translateX(($amt * 2));
+		}
 	}
 
 	&.active {
