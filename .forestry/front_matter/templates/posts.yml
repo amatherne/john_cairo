@@ -1,4 +1,6 @@
 ---
+pages:
+- _posts/into-the-great-dome.md
 hide_body: false
 fields:
 - name: layout
