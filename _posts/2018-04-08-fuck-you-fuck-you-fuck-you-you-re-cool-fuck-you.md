@@ -30,14 +30,20 @@ Michael! No… but I'd like to be asked! Really? Did nothing cancel? **That's w
 
 Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's the last time! It's called 'taking advantage.' It's what gets you ahead in life. Michael!
 
-1. Guy's a pro.
-2. There's so many poorly chosen words in that sentence.
-3. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
+> There's so many poorly chosen words in that sentence.
 
 ### There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.
 
 There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
 
-* But I bought a yearbook ad from you, doesn't that mean anything anymore?
-* No! I was ashamed to be SEEN with you. I like being with you.
-* I'm half machine. I'm a monster.
+There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
+
+![](/uploads/2018/04/08/IMG-0468.JPG)
+
+There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
+
+There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
+
+> I hear the jury's still out on science.
+
+![](/uploads/2018/04/08/IMG-0472.JPG)
