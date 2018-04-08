@@ -137,14 +137,27 @@
 	<script type="text/javascript">
 		$(document).ready(function () {
 
-			// Target iframes to make them responsive
+			// Img replace with Background image / Caption setup
 			var img = $('img[src*="/uploads/"]');
-			img.each(function () {
+			img.each(function (i) {
 				var current = $(this).attr('src'),
-					abs = '/john_cairo/';
-				$(this).attr('src', abs + current);
+					alt = $(this).attr('alt'),
+					title = $(this).attr('title'),
+					id = 'img-'+i,
+					abs = '/john_cairo/',
+					url = abs+current,
+					wrap = '<div class="img '+id+'"><div class="background-image square" style="background-image:url('+url+');"></div><div class="img-info"></div></div>';
+				$(this).replaceWith(wrap);
+				if (title !== null && title !== '' && typeof title !== typeof undefined) {
+					$('.'+id+' .img-info').append('<h3>'+title+'</h3>');
+				}
+				if (alt !== null && alt !== '' && typeof alt !== typeof undefined) {
+					$('.'+id+' .img-info').append('<span class="caption">'+alt+'</span>');
+				}
+				if (title !== null && title !== '' && typeof title !== typeof undefined || alt !== null && alt !== '' && typeof alt !== typeof undefined) {
+					$('.'+id+' .background-image').addClass('overlay');
+				}
 			})
-
 			// Slider hover info
 			$('.arrow-bg').on('mouseenter', function () {
 				$('.right-overlay').addClass('show');
