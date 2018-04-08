@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Into the Great Dome
 date: 2018-04-08 03:36:52 +0000
 banner_image: "/uploads/2018/04/08/IMG-0473.JPG"
