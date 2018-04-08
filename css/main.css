@@ -2683,8 +2683,7 @@ symbol.icon:not(.icon--full-color) rect {
     color: #ffffff;
     display: block;
     width: 300px;
-    font-size: 0.95em;
-    transform: translateX(0); }
+    font-size: 0.95em; }
     .site-header .logo a {
       font-size: inherit;
       color: inherit;
