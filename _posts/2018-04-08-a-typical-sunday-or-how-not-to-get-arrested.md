@@ -3,7 +3,13 @@ layout: page
 title: 'A Typical Sunday: or how not to get arrested'
 date: 2018-04-08 06:19:36 +0000
 banner_image: "/uploads/2018/04/08/IMG-0468.JPG"
-gallery: []
+gallery:
+- image: "/uploads/2018/04/08/IMG-0466.JPG"
+  detail: Now, when you do this without getting punched in the chest, you'll have
+    more fun. First place chick is hot, but has an attitude, doesn't date magicians.
+    It's a hug, Michael. I'm hugging you. No! I was ashamed to be SEEN with you. I
+    like being with you.
+  caption: " He didn't like his trailer."
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
 
@@ -17,7 +23,7 @@ Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's t
 2. There's so many poorly chosen words in that sentence.
 3. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
 
-### There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.
+> ### There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.
 
 There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
 
