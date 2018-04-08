@@ -9,14 +9,15 @@
 	
 	<!-- includes/head -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Home - John Cairo</title>
-  <meta name="description" content="Blah Blah Blah">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/john_cairo/img/favicon.png"/>
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  	<title>Home - John Cairo</title>
+  	<meta name="description" content="Blah Blah Blah">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="icon" type="image/png" href="/john_cairo/img/favicon.png"/>
 
-  <link rel="stylesheet" href="/john_cairo/css/main.css">
+  	<link rel="stylesheet" href="/john_cairo/css/main.css">
+  	<link rel="stylesheet" href="https://use.typekit.net/jxj0ifv.css">
 
 	<script src="/john_cairo/js/main.js" type="text/javascript"></script>
 	<script src="/john_cairo/js/vendor/lightbox.js" type="text/javascript"></script>
@@ -34,16 +35,28 @@
 					<a href="/john_cairo/">
 						
 						
-							<span class="visually-hidden">John Cairo</span>
-							<img src="/john_cairo/uploads/2018/03/31/logo.png">
+							<span class="main_title">John Cairo</span>
+							<span class="sub_title">New Orleans Based Photographer</span>
 						
 					</a>
 				</h1>
 			</div>
-			<div class="nav-toggle medium-up--hide">Menu</div>
+			<div class="nav-toggle ">
+				<span class="visually-hidden">Menu</span>
+				
+				<?xml version='1.0' encoding='iso-8859-1'?>
+<svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 24 24">
+  <g>
+    <path d="M24,3c0-0.6-0.4-1-1-1H1C0.4,2,0,2.4,0,3v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V3z"/>
+    <path d="M24,11c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V11z"/>
+    <path d="M24,19c0-0.6-0.4-1-1-1H1c-0.6,0-1,0.4-1,1v2c0,0.6,0.4,1,1,1h22c0.6,0,1-0.4,1-1V19z"/>
+  </g>
+</svg>
+
+			</div>
 			<div class="grid__item small--text-center medium-up--text-right small--one-whole medium--two-thirds large-up--four-fifths">
 				<nav class="main-nav">
-					<div class="nav-toggle close medium-up--hide">Close</div>
+					<div class="nav-toggle close ">Close</div>
 					<ul class="">
 						
 							<li class="current">
@@ -129,16 +142,40 @@
 				<div class="container">
 					<!-- includes/hero -->
 
-	<div class="hero" id="banner" style="background-image: url('/john_cairo/uploads/2018/04/01/snaps.JPG');">
-		<div class="center-content">
-			<h2 class="h1">Austin Matherne</h2>
+	<div class="hero" id="banner" >
+		<div class="slider">
 			
-				<h3>Web Developer / Musician</h3>
+				<div 
+					class="slide background-image" 
+					style="background-image: url('/john_cairo/img/hero.JPG');">
+					<div class="slide__meta">
+						<h5><a href="">Some Post Title 1</a></h5>
+					</div>
+				</div>
 			
+				<div 
+					class="slide background-image" 
+					style="background-image: url('/john_cairo/img/hero.JPG');">
+					<div class="slide__meta">
+						<h5><a href="">Some Post Title 2</a></h5>
+					</div>
+				</div>
 			
-			<a href="" class="btn" title="Contact Me">
-				Contact Me&nbsp;<i class="fa fa-chevron-right"></i>
-			</a>
+				<div 
+					class="slide background-image" 
+					style="background-image: url('/john_cairo/img/hero.JPG');">
+					<div class="slide__meta">
+						<h5><a href="">Some Post Title 3</a></h5>
+					</div>
+				</div>
+			
+				<div 
+					class="slide background-image" 
+					style="background-image: url('/john_cairo/img/hero.JPG');">
+					<div class="slide__meta">
+						<h5><a href="">Some Post Title 4</a></h5>
+					</div>
+				</div>
 			
 		</div>
 	</div>
@@ -150,154 +187,36 @@
 		setTimeout(function(){
         	$('.hero').addClass('fade-in');
         }, 1000);
-	})
+
+
+		// Slider
+	  	$('.hero .slider').slick({
+	    	dots: true,
+		  	infinite: true,
+		  	speed: 300,
+		  	dotsClass: 'custom_paging',
+		    customPaging: function (slider, i) {
+		        //FYI just have a look at the object to find available information
+		        //press f12 to access the console in most browsers
+		        //you could also debug or look in the source
+		        console.log(slider);
+		        return  (i + 1) + '/' + slider.slideCount;
+		    },
+		  	slidesToShow: 1,
+		  	prevArrow: '<button type="button" class="slick-arrow slick-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>leftAsset 3</title><path d="M8.117,17.212a.881.881,0,1,0,1.253-1.24L3.019,9.622H23.976a.873.873,0,0,0,.877-.878.882.882,0,0,0-.877-.889H3.019L9.37,1.515a.9.9,0,0,0,0-1.253.878.878,0,0,0-1.253,0L.263,8.117a.863.863,0,0,0,0,1.24Z" style="fill:#fff"/></svg></button>',
+		  	nextArrow: '<button type="button" class="slick-arrow slick-next"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24.853 17.475"><title>rightAsset 4</title><path d="M16.736.263A.881.881,0,1,0,15.483,1.5l6.351,6.351H.877A.873.873,0,0,0,0,8.731a.882.882,0,0,0,.877.889H21.834L15.483,15.96a.9.9,0,0,0,0,1.253.878.878,0,0,0,1.253,0L24.59,9.358a.863.863,0,0,0,0-1.24Z" style="fill:#fff"/></svg></button>'
+	  	});
+	});
 </script>
 
-<!-- includes/featured-post -->
 
 
 
-
-	<div class="featured-post scroll-trigger">
-		<div class="container">
-			<h2 class="section-title fade-down">Featured</h2>	
-			<div class="grid">
-				<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-right vert-middle fade-right">
-					<h3 class="post-title"></h3>
-				</div>
-				<div class="grid__item one-whole text-center medium-up--one-half medium-up--text-left vert-middle fade-left">
-					<span class="tags">
-						
-					</span>
-					<span class="entry-date"></span>
-				</div>
-				<div class="grid__item one-whole medium-up--one-half fade-right">
-					<div></div>
-					<a class="btn right" href="">See Full Post</a>
-				</div>
-				<div class="grid__item one-whole medium-up--one-half fade-left">
-					<div class="background-image square" style="background-image: url();"></div>
 				</div>
 			</div>
-		</div>
-	</div>
-	<script type="text/javascript">
-		$(document).ready(function () {
-	       	// $('.featured-post').addClass('scroll-trigger');
-		})
-	</script>
 
-
-
-
-<!-- includes/featured-projects -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="featured-projects scroll-trigger">
-	<div class="container padding">
-		<h2 class="h1 page-title fade-down">Recent Posts</h2>	
-		<div class="grid fade-down">
 			
+		</div>
 		
-		</div>
-	</div>
-</div>
-
-
-<script type="text/javascript">
-	$(document).ready(function () {
-		var $cont = $('#sort'),
-			$item = $cont.children('.grid__item');
-		$item.sort(function(a,b){
-			var an = b.getAttribute('data-date'),
-				bn = a.getAttribute('data-date');
-			if(an > bn) {
-				return 1;
-			}
-			if(an < bn) {
-				return -1;
-			}
-			return 0;
-		});
-		$item.detach().appendTo($cont);
-
-		// setTimeout(function(){
-  //       	$('.featured-projects').addClass('scroll-trigger');
-  //       }, 1000);
-	})
-</script>
-
-
-
-				</div>
-			</div>
-
-			<!-- includes/footer -->
-<footer>
-    <div class="container">
-        <nav class="footer-nav">
-            <ul class="">
-                
-                    <li class="">
-                        <a href="/john_cairo/">
-                            Home
-                        </a>
-                    </li>
-                
-                    <li class="">
-                        <a href="/john_cairo/about/">
-                            About Me
-                        </a>
-                    </li>
-                
-                    <li class="">
-                        <a href="/john_cairo/projects/">
-                            Portfolio
-                        </a>
-                    </li>
-                
-                    <li class="">
-                        <a href="/john_cairo/blog/">
-                            Blog
-                        </a>
-                    </li>
-                
-                    <li class="">
-                        <a href="/john_cairo/music">
-                            Music
-                        </a>
-                    </li>
-                
-                    <li class="">
-                        <a href="/john_cairo/contact/">
-                            Contact
-                        </a>
-                    </li>
-                
-            </ul>
-        </nav>
-        <div class="copyright">
-            <p>
-                &copy; 2018 John Cairo - All Rights Reserved<br>
-            </p>
-        </div>
-    </div>
-</footer>
-		</div>
-		<!-- Javascript -->
-		<script src="https://use.typekit.net/akz3yrt.js"></script>
-  		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</body>
 </html>
