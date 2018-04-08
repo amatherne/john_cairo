@@ -38,7 +38,7 @@ There's only one man I've ever called a coward, and that's Brian Doyle Murray. N
 
 There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
 
-![](/uploads/2018/04/08/IMG-0468.JPG)
+![But she caught me on the counter (It wasn't me) Saw me bangin' on the sofa (It wasn't me) I even had her in the shower (It wasn't me) She even caught me on camera (It wasn't me)](/uploads/2018/04/08/IMG-0468.JPG "Lineup")
 
 There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
 
