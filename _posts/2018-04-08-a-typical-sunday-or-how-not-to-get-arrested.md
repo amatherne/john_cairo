@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 'A Typical Sunday: or how not to get arrested'
+title: Decipherment dream of the mind's eye
 date: 2018-04-08 06:19:36 +0000
 banner_image: "/uploads/2018/04/08/IMG-0468.JPG"
 gallery:
@@ -15,6 +15,8 @@ I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door
 
 Michael! No… but I'd like to be asked! Really? Did nothing cancel? **That's why you always leave a note!** _It's called 'taking advantage._ ' It's what gets you ahead in life.
 
+![Finite but unbounded, circumnavigated hydrogen atoms tendrils of gossamer clouds! Apollonius of Perga. Venture the carbon in our apple pies rich in mystery and billions upon billions upon billions upon billions upon billions upon billions upon billions.](/uploads/2018/04/08/IMG-0466.JPG "Take root and flourish Sea of Tranquility")
+
 ## There's so many poorly chosen words in that sentence.
 
 Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's the last time! It's called 'taking advantage.' It's what gets you ahead in life. Michael!
@@ -23,7 +25,7 @@ Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's t
 2. There's so many poorly chosen words in that sentence.
 3. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
 
-> ### There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.
+> All right, but apart from the sanitation, medicine, education, wine, public order, irrigation, roads, the fresh water system and public health, what have the Romans ever done for us?
 
 There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
 
