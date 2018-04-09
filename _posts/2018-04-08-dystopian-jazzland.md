@@ -27,6 +27,6 @@ Why is it the world never remembered the name of Johann Gambolputty de von Ausfe
 
 I'm not a roman mum, I'm a kike, a yid, a heebie, a hook-nose, I'm kosher mum, I'm a Red Sea pedestrian, and proud of it! This morning, shortly after 11:00, comedy struck this little house on Dibley Road. Sudden, violent comedy.
 
-![I mean, because we are members of the Protestant Reformed Church, which successfully challenged the autocratic power of the Papacy in the mid-sixteenth century, we can wear little rubber devices to prevent issue.](/uploads/2018/04/08/IMG-0470.JPG "h, oh, I see! Running away, eh?")
+![I mean, because we are members of the Protestant Reformed Church, which successfully challenged the autocratic power of the Papacy in the mid-sixteenth century, we can wear little rubber devices to prevent issue.](/uploads/2018/04/08/IMG-0470.JPG "Oh, oh, I see! Running away, eh?")
 
 Well, er, yes Mr. Anchovy, but you see your report here says that you are an extremely dull person. You see, our experts describe you as an appallingly dull fellow, unimaginative, timid, lacking in initiative, spineless, easily dominated, no sense of humour, tedious company and irrepressibly drab and awful. And whereas in most professions these would be considerable drawbacks, in chartered accountancy, they're a positive boon.
