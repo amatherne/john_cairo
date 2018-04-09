@@ -10,24 +10,23 @@ gallery:
     Guy's a pro. Not tricks, Michael, illusions. Say goodbye to these, because it's
     the last time!
 - image: "/uploads/2018/04/08/IMG-0469.JPG"
+  caption: "'I hear you've been a naughty boy, Clement'"
+  detail: That's what being a Protestant's all about. That's why it's the church for
+    me. That's why it's the church for anyone who respects the individual and the
+    individual's right to decide for him or herself. When Martin Luther nailed his
+    protest up to the church door in fifteen-seventeen, he may not have realised the
+    full significance of what he was doing, but four hundred years later, thanks to
+    him, my dear, I can wear whatever I want on my John Thomas...
 banner_image: "/uploads/2018/04/08/IMG-0470.JPG"
 ---
-I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
+Why is it the world never remembered the name of Johann Gambolputty de von Ausfern-schplenden-schlitter-crasscrenbon-fried-digger-dangle-dongle-dungle-burstein-Von-knacker-thrasher-apple-banger-horowitz-ticolensic-grander-knotty-spelltinkle-grandlich-grumblemeyer-spelterwasser-kurstlich-himbleeisen-bahnwagen-gutenabend-bitte-ein-nürnburger-bratwurstle-gerspurten-mit-zwei-macheluber-hundsfut-gumberaber-shoenendanker-kalbsfleisch-mittler-aucher von Hautkopft of Ulm
 
-Michael! No… but I'd like to be asked! Really? Did nothing cancel? **That's why you always leave a note!** _It's called 'taking advantage._ ' It's what gets you ahead in life.
+> You see, our experts describe you as an appallingly dull fellow, unimaginative, timid, lacking in initiative, spineless, easily dominated, no sense of humour, tedious company and irrepressibly drab and awful. And whereas in most professions these would be considerable drawbacks, in chartered accountancy, they're a positive boon.
 
-## There's so many poorly chosen words in that sentence.
+Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
 
-Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's the last time! It's called 'taking advantage.' It's what gets you ahead in life. Michael!
+I'm not a roman mum, I'm a kike, a yid, a heebie, a hook-nose, I'm kosher mum, I'm a Red Sea pedestrian, and proud of it! This morning, shortly after 11:00, comedy struck this little house on Dibley Road. Sudden, violent comedy.
 
-1. Guy's a pro.
-2. There's so many poorly chosen words in that sentence.
-3. I don't criticize you! And if you're worried about criticism, sometimes a diet is the best defense.
+![I mean, because we are members of the Protestant Reformed Church, which successfully challenged the autocratic power of the Papacy in the mid-sixteenth century, we can wear little rubber devices to prevent issue.](/uploads/2018/04/08/IMG-0470.JPG "h, oh, I see! Running away, eh?")
 
-### There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor.
-
-There's only one man I've ever called a coward, and that's Brian Doyle Murray. No, what I'm calling you is a television actor. I care deeply for nature. Steve Holt! Not tricks, Michael, illusions. First place chick is hot, but has an attitude, doesn't date magicians.
-
-* But I bought a yearbook ad from you, doesn't that mean anything anymore?
-* No! I was ashamed to be SEEN with you. I like being with you.
-* I'm half machine. I'm a monster.
+Well, er, yes Mr. Anchovy, but you see your report here says that you are an extremely dull person. You see, our experts describe you as an appallingly dull fellow, unimaginative, timid, lacking in initiative, spineless, easily dominated, no sense of humour, tedious company and irrepressibly drab and awful. And whereas in most professions these would be considerable drawbacks, in chartered accountancy, they're a positive boon.
