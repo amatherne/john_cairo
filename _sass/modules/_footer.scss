@@ -2,11 +2,14 @@
 footer {
 	text-align:center;
 	background-color:$brandFive;
-	padding:($bodyLineHeight * 1.5) $bodyLineHeight;
-	color:$brandFour;
+	background-color:$brandFive;
+	background:linear-gradient(45deg,$brandFive, $brandOne);
+	padding:($bodyLineHeight * 5) $bodyLineHeight;
+	color:$brandTwo;
+	margin-top:($bodyLineHeight * 8);
 	.footer-nav {
 		ul {
-			margin:0 0 $bodyLineHeight;
+			margin:0 0 ($bodyLineHeight * 2);
 			padding:0;
 			li {	
 				display:inline-block;
@@ -26,7 +29,7 @@ footer {
 	}
 	.copyright {
 		p {
-			color:$brandFour;
+			color:$brandTwo;
 		}
 	}
 	@media screen and (max-width:$grid-medium) {

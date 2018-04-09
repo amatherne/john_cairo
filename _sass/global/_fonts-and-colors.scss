@@ -1,7 +1,9 @@
 // body
 // ----
 	body {
-	    background:#FAFAFA;
+	    background:$brandTwo;
+		background:linear-gradient(45deg,rgba($brandTwo, 1) 5%, rgba($brandFour, 1) 95%);
+
 	    .max-width {
 			background-color:$bodyBG;
 			background:linear-gradient($brandFour, $brandTwo);

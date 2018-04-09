@@ -1,0 +1,29 @@
+<!-- includes/project-post -->
+<div class="project-post">
+	<a href="{{ p.url | absolute_url }}">
+		{% comment %}<h4 class="tag">{{ p.tags.first }}</h4>{% endcomment %}
+		{% if p.banner_image != '' %}
+			{% assign image = p.banner_image | absolute_url %}
+		{% else %}
+			{% assign image = "/img/placeholder.png" | absolute_url %}
+		{% endif %}
+		<div class="grid_no_gutter">
+			<div class="grid__item vert-middle one-whole medium--one-half large-up--one-third">
+				<div class="background-image square " style="background-image:url({{ image }});" >
+				</div>
+				<span class="date collection">{{ p.date | date: "%b %d, %Y" }}</span>
+
+			</div>
+			<div class="grid__item vert-middle one-whole medium--one-half large-up--two-thirds">
+				<div class="post-meta">
+					<span class="h3">{{ p.title }}</span>
+					{% comment %}<div class="underline"></div>{% endcomment %}
+					<span class="date home">{{ p.date | date: "%b %d, %Y" }}</span>
+					<div class="desc">
+						{{ p.content | strip_html | truncatewords: 20 }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</a>
+</div>

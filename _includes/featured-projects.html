@@ -1,15 +1,75 @@
 <!-- includes/featured-projects -->
-{% assign width = 'small--one-whole medium--one-half large-up--one-quarter' %}
-
+{% comment %}{% assign width = 'small--one-whole medium--one-half large-up--one-quarter' %}{% endcomment %}
+{% assign feat_title = "The Places I've Been"%}
 <div class="featured-projects scroll-trigger">
-	<div class="container padding">
+	<div class="container">
 		{% comment %}<h2 class="h1 page-title fade-down">Recent Posts</h2>	{% endcomment %}
-		<div class="grid fade-down">
-			{% for p in site.posts limit: 4 %}
-				<div class="grid__item {{ width }}" data-date="{{ p.date | date: date_format }}">
-					{% include project-post.html %}
+		<div class="grid_no_gutter">
+
+			<div class="grid__item vert-middle one-whole  large-up--one-third fade-down header-container" data-match-height>
+					<div class="center-content">
+						<h2>{{ feat_title }}</h2>
+						<a href="{{ '/posts/' | absolute_url }}" class="btn post-btn">{% include icon-right-arrow.html %}</a>
+					</div>
+			</div>
+			<div class="grid__item vert-middle one-whole  large-up--two-thirds fade-up " data-match-height>
+				<span class="scroll-msg medium-down--hide">Scroll for More</span>
+
+				<div class="posts-container">
+					{% for p in site.posts limit: 8 %}
+						<div class="line" data-date="{{ p.date | date: date_format }}">
+							{% include post.html %}
+						</div>
+					{% endfor %}
 				</div>
-			{% endfor %}
+			</div>
 		</div>
 	</div>
 </div>
+<script type="text/javascript">
+	$(document).ready(function () {
+		$(window).resize(function() {
+		    var content = '.header-container .center-content',
+		        container = '.header-container',
+		        $height = $(content).outerHeight();
+
+		    $(container).css('min-height', $height + 100);
+		});
+		$(window).trigger('resize');
+
+
+
+		 //    https://codepen.io/Lewitje/pen/YybQEP
+        //    Equal height - by Lewi Hussey
+        //
+        var matchHeight = function () {
+            function init() {
+                eventListeners();
+                matchHeight();
+            }
+            function eventListeners(){
+                $(window).on('resize', function() {
+                    matchHeight();
+                });
+            }
+            function matchHeight(){
+                var groupName = $('[data-match-height]');
+                var groupHeights = [];
+                groupName.css('min-height', 'auto');
+                groupName.each(function() {
+                    groupHeights.push($(this).outerHeight());
+                });    
+                var maxHeight = Math.max.apply(null, groupHeights);
+                groupName.css('min-height', maxHeight);
+            };
+            return {
+                init: init
+            };
+        } ();
+        // $(document).ready(function() {
+        if ($(window).width() > 767) {
+            matchHeight.init();
+        }
+        // });
+	})
+</script>

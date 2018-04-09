@@ -6,8 +6,8 @@ layout: default
   <h2 class="page-title fade-down">{{ page.title | capitalize }}</h2>  
   <div class="grid">
     {% for p in site.posts %}
-      <div class="grid__item small--one-whole medium--one-quarter large-up--one-quarter fade-up">
-        {% include project-post.html %}
+      <div class="grid__item small--one-whole large-up--one-half fade-up">
+        {% include post.html %}
       </div>
     {% endfor %}
   </div>

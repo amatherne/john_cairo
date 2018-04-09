@@ -1,8 +1,9 @@
 ---
-title: About
+title: A Little About Me
 date: 2018-04-03 03:21:11 +0000
 banner_image: "/uploads/2018/04/01/hero.jpg"
-layout: page
+description: I grew up in Baton Rouge, Louisiana, but have been a resident of the Austin area for the past decade. The laid back, laissez-faire style of the city reminded me of comforts of home, but embodied more of the cultural progressive attitudes that I value.
+layout: page-w-hero
 publish_date: 2018-04-03 03:21:36 +0000
 show_date: false
 menu:

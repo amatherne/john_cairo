@@ -4,65 +4,68 @@
 	.project-post {
 		$shadow:rgba(51, 55, 69, 0.4);
 		$shadowHover:rgba(51, 55, 69, 0.6);
-		padding:$bodyLineHeight;
-		max-width:450px;
-		margin:0 auto;
+		// padding:$bodyLineHeight 0;
+		max-width:600px;
+		width:90%;
+		margin:($bodyLineHeight * 3) auto;
 		.tag {
 			font-size:2em;
 			font-weight:300;
 			letter-spacing:0.1em;
 			min-height:40px;
 		}
+
+		.date {
+			&.home, 
+			&.collection {
+				display:none;
+			}
+		}
 		
 		.background-image {
-			border: 1vw solid $brandFour;
-			box-shadow:5px 6px 7px $shadow;
+			box-shadow:0px 0px 32px 0px rgba($brandOne, 0.4);
 			transition:all .1s linear;
-			padding-top: calc(100% - 2vw) !important;
+			filter: grayscale(80%);
 		}
 		.post-meta {
-			padding:($bodyLineHeight / 2);
+			padding:($bodyLineHeight * 1.5);
 		}
 		.h3 {
 			font-size:1.2em;
 			text-transform:uppercase;
 			letter-spacing:0.05em;
 			font-weight:700;
-			margin:0;
+			margin:0 0 ($bodyLineHeight * 0.25);
+		}
+		.date {
+			margin:0 0 ($bodyLineHeight * 0.25);
+			display:block;
 		}
 		.tag, 
 		.h3,
-		.date {
-			color:$brandFive;
-			text-shadow:1px 2px 3px $shadow;
+		.date,
+		.desc {
+			color:$brandOne;
+			text-shadow:1px 2px 3px rgba($brandOne, 0.3);
 			transition:all .1s linear;
 
 		}
-		.underline {
-			background-color:$brandFive;
-			height:1px;
-			width:90%;
-			margin:($bodyLineHeight / 2) auto;
-			box-shadow:1px 2px 3px $shadow;
-			transition: all .1s linear;
+		.desc {
+			font-size:1.1em;
 		}
+
 		a {
 			text-decoration:none;
 			&:hover {
 				.background-image {
-					border: 1vw solid $brandFour;
-					box-shadow:1px 3px 5px $shadowHover;
-				}
-				.underline {
-					background-color:$brandFour;
-					box-shadow:1px 1px 2px $shadowHover;
+					box-shadow:0px 0px 22px 0px rgba($brandOne, 0.7);
+					filter: grayscale(0%);
 				}
 				.tag, 
 				.h3,
-				.date {
-					color:$brandFour;
-					text-shadow:1px 1px 2px $shadowHover;
-
+				.date,
+				.desc {
+					text-shadow:1px 1px 2px rgba($brandOne, 0.5);
 				}
 			}
 		}
@@ -71,5 +74,6 @@
 			.tag {
 				font-size:1.5em;
 			}
+
 		}
 	}

@@ -4,7 +4,7 @@ layout: default
 <!-- layouts/page -->
 
 
-<div class="container padding fade-in background-image" style="background-image: url('{{ page.banner_image | absolute_url }}');">
+<div class="container padding  fade-in background-image" style="background-image: url('{{ page.banner_image | absolute_url }}');">
 	<div class="grid">
 		<div class="grid__item one-whole  fade-down">
 			<div class="post-meta">
@@ -24,5 +24,16 @@ layout: default
 		setTimeout(function(){
         	$('.container.fade-in').addClass('active');
         }, 1000);
+        // slider height IOS
+        if ($(window).width() < 767) {
+        	var options = [
+			  	{
+			    	selector: '.container.background-image',
+			    	vh: 100, 
+			  	}
+			];
+			var vhFix = new VHChromeFix(options);
+        }
+		
 	});
 </script>

@@ -66,7 +66,7 @@
 			- Will not work if `styles/global/grid.scss` is removed
 	==============================================================================*/
 	$breakpoint-has-widths: ($small, $medium-up, $medium, $large, $large-up);
-	$breakpoint-has-push: ($small, $medium-up, $medium, $large, $large-up);
+	$breakpoint-has-push: ($small, $medium-up, $medium, $medium-down, $large, $large-up);
 
 
 // Sizing
