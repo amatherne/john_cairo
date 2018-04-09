@@ -2,20 +2,23 @@
 title: A Little About Me
 date: 2018-04-03 03:21:11 +0000
 banner_image: "/uploads/2018/04/01/hero.jpg"
-description: I grew up in Baton Rouge, Louisiana, but have been a resident of the Austin area for the past decade. The laid back, laissez-faire style of the city reminded me of comforts of home, but embodied more of the cultural progressive attitudes that I value.
+description: I grew up in Baton Rouge, Louisiana, but have been a resident of the
+  Austin area for the past decade. The laid back, laissez-faire style of the city
+  reminded me of comforts of home, but embodied more of the cultural progressive attitudes
+  that I value.
 layout: page-w-hero
 publish_date: 2018-04-03 03:21:36 +0000
 show_date: false
 menu:
+  footer:
+    identifier: _about
+    url: "/about/"
+    weight: 1
   navigation:
     identifier: _about
     url: "/about/"
     weight: 2
     title: About Me
-  footer:
-    identifier: _about
-    url: "/about/"
-    weight: 1
 ---
 
 My name is Austin Matherne, and I unapologetically sprung from the mid-80's. I grew up in Baton Rouge, Louisiana, but have been a resident of the Austin area for the past decade. The laid back, laissez-faire style of the city reminded me of comforts of home, but embodied more of the cultural progressive attitudes that I value. This is why I want to give back, to give voice and presence to the local community of small business and artists that make Austin thrive.
