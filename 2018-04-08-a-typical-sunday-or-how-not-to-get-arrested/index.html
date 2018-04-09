@@ -175,6 +175,20 @@
 				$(this).toggleClass('hold-show');
 			})
 
+			// slider height IOS
+			var options = [
+			  {
+			    selector: '.slider',
+			    vh: 100, 
+			  },
+			  {
+			    selector: '.slider .slide',
+			    vh: 100, 
+			  }
+			];
+
+			var vhFix = new VHChromeFix(options);
+
 			// Slider
 		  	$('.slider').slick({
 		    	dots: true,
