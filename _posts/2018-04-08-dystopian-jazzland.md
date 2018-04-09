@@ -19,11 +19,11 @@ gallery:
     him, my dear, I can wear whatever I want on my John Thomas...
 banner_image: "/uploads/2018/04/08/IMG-0470.JPG"
 ---
-Why is it the world never remembered the name of Johann Gambolputty de von Ausfern-schplenden-schlitter-crasscrenbon-fried-digger-dangle-dongle-dungle-burstein-Von-knacker-thrasher-apple-banger-horowitz-ticolensic-grander-knotty-spelltinkle-grandlich-grumblemeyer-spelterwasser-kurstlich-himbleeisen-bahnwagen-gutenabend-bitte-ein-nürnburger-bratwurstle-gerspurten-mit-zwei-macheluber-hundsfut-gumberaber-shoenendanker-kalbsfleisch-mittler-aucher von Hautkopft of Ulm
+Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
 
 > You see, our experts describe you as an appallingly dull fellow, unimaginative, timid, lacking in initiative, spineless, easily dominated, no sense of humour, tedious company and irrepressibly drab and awful. And whereas in most professions these would be considerable drawbacks, in chartered accountancy, they're a positive boon.
 
-Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
+Why is it the world never remembered the name of Johann Gambolputty de von Ausfern-schplenden-schlitter-crasscrenbon-fried-digger-dangle-dongle-dungle-burstein-Von-knacker-thrasher-apple-banger-horowitz-ticolensic-grander-knotty-spelltinkle-grandlich-grumblemeyer-spelterwasser-kurstlich-himbleeisen-bahnwagen-gutenabend-bitte-ein-nürnburger-bratwurstle-gerspurten-mit-zwei-macheluber-hundsfut-gumberaber-shoenendanker-kalbsfleisch-mittler-aucher von Hautkopft of Ulm
 
 I'm not a roman mum, I'm a kike, a yid, a heebie, a hook-nose, I'm kosher mum, I'm a Red Sea pedestrian, and proud of it! This morning, shortly after 11:00, comedy struck this little house on Dibley Road. Sudden, violent comedy.
 
