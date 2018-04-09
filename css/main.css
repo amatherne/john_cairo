@@ -315,37 +315,37 @@ a {
     font-size: 3.375em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte h2, .rte .h2 {
     font-size: 2.25em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte h3, .rte .h3 {
     font-size: 1.5em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte h4, .rte .h4 {
     font-size: 1em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte h5, .rte .h5 {
     font-size: 0.6666666667em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte h6, .rte .h6 {
     font-size: 0.4444444444em;
     font-weight: 900;
     letter-spacing: 0em;
-    margin-bottom: 0.15em;
+    margin: 0.75em 0 0.375em;
     font-family: "semplicitapro", sans-serif; }
   .rte p {
     font-size: 1.05em; }
@@ -3753,54 +3753,6 @@ footer {
     .template--404 .rte form {
       max-width: 700px;
       transform: none; }
-    .template--page .rte h1, .template--page .rte .h1,
-    .template--page-w-hero .rte h1,
-    .template--page-w-hero .rte .h1,
-    .template--contact .rte h1,
-    .template--contact .rte .h1,
-    .template--404 .rte h1,
-    .template--404 .rte .h1 {
-      transform: none; }
-    .template--page .rte h2, .template--page .rte .h2,
-    .template--page-w-hero .rte h2,
-    .template--page-w-hero .rte .h2,
-    .template--contact .rte h2,
-    .template--contact .rte .h2,
-    .template--404 .rte h2,
-    .template--404 .rte .h2 {
-      transform: none; }
-    .template--page .rte h3, .template--page .rte .h3,
-    .template--page-w-hero .rte h3,
-    .template--page-w-hero .rte .h3,
-    .template--contact .rte h3,
-    .template--contact .rte .h3,
-    .template--404 .rte h3,
-    .template--404 .rte .h3 {
-      transform: none; }
-    .template--page .rte h4, .template--page .rte .h4,
-    .template--page-w-hero .rte h4,
-    .template--page-w-hero .rte .h4,
-    .template--contact .rte h4,
-    .template--contact .rte .h4,
-    .template--404 .rte h4,
-    .template--404 .rte .h4 {
-      transform: none; }
-    .template--page .rte h5, .template--page .rte .h5,
-    .template--page-w-hero .rte h5,
-    .template--page-w-hero .rte .h5,
-    .template--contact .rte h5,
-    .template--contact .rte .h5,
-    .template--404 .rte h5,
-    .template--404 .rte .h5 {
-      transform: none; }
-    .template--page .rte h6, .template--page .rte .h6,
-    .template--page-w-hero .rte h6,
-    .template--page-w-hero .rte .h6,
-    .template--contact .rte h6,
-    .template--contact .rte .h6,
-    .template--404 .rte h6,
-    .template--404 .rte .h6 {
-      transform: none; }
   .template--page .page-banner,
   .template--page-w-hero .page-banner,
   .template--contact .page-banner,
@@ -3874,6 +3826,17 @@ footer {
     .template--contact .page-banner .grid__item,
     .template--404 .page-banner .grid__item {
       vertical-align: middle; }
+  .template--page .in-page-w-hero .rte,
+  .template--page-w-hero .in-page-w-hero .rte,
+  .template--contact .in-page-w-hero .rte,
+  .template--404 .in-page-w-hero .rte {
+    margin: 6em auto; }
+    .template--page .in-page-w-hero .rte form,
+    .template--page-w-hero .in-page-w-hero .rte form,
+    .template--contact .in-page-w-hero .rte form,
+    .template--404 .in-page-w-hero .rte form {
+      max-width: 700px;
+      transform: none; }
   .template--page#contact .container.padding,
   .template--page-w-hero#contact .container.padding,
   .template--contact#contact .container.padding,
