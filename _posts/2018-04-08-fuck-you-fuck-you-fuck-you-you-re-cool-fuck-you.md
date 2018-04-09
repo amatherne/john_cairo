@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Fuck you. Fuck you. Fuck you. YOU'RE COOL. Fuck You.
+title: 'You don''t frighten us, English pig-dogs! '
 date: 2018-04-08 06:20:40 +0000
 banner_image: "/uploads/2018/04/08/IMG-0465.JPG"
 gallery:
@@ -24,10 +24,6 @@ gallery:
 ---
 I'm afraid I just blue myself. I'm afraid I just blue myself. I've opened a door here that I regret. Bad news. Andy Griffith turned us down. He didn't like his trailer.
 
-Michael! No… but I'd like to be asked! Really? Did nothing cancel? **That's why you always leave a note!** _It's called 'taking advantage._ ' It's what gets you ahead in life.
-
-## There's so many poorly chosen words in that sentence.
-
 Get me a vodka rocks. And a piece of toast. Say goodbye to these, because it's the last time! It's called 'taking advantage.' It's what gets you ahead in life. Michael!
 
 > There's so many poorly chosen words in that sentence.
@@ -46,4 +42,4 @@ There's only one man I've ever called a coward, and that's Brian Doyle Murray. N
 
 > I hear the jury's still out on science.
 
-![](/uploads/2018/04/08/IMG-0472.JPG)
+![](/uploads/2018/04/08/IMG-0472.JPG "Bloody Peasant! Bring her forward!")
