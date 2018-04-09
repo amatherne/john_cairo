@@ -17,7 +17,7 @@ menu:
   navigation:
     identifier: _about
     url: "/about/"
-    weight: 4
+    weight: 3
     title: Bio
 ---
 
