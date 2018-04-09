@@ -9,6 +9,10 @@ fields:
 - type: file
   name: banner_image
   label: Banner Image
+- type: text
+  default: ''
+  label: Title
+  name: title
 - name: layout
   label: Layout
   type: text
