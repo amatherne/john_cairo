@@ -116,7 +116,7 @@
 					<!-- layouts/page -->
 
 
-<div class="container padding fade-in background-image" style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0468%20copy.jpg');">
+<div class="container padding  fade-in background-image" style="background-image: url('/john_cairo/uploads/2018/04/08/IMG-0468%20copy.jpg');">
 	<div class="grid">
 		<div class="grid__item one-whole  fade-down">
 			<div class="post-meta">
@@ -147,6 +147,17 @@
 		setTimeout(function(){
         	$('.container.fade-in').addClass('active');
         }, 1000);
+        // slider height IOS
+        if ($(window).width() < 767) {
+        	var options = [
+			  	{
+			    	selector: '.container.background-image',
+			    	vh: 100, 
+			  	}
+			];
+			var vhFix = new VHChromeFix(options);
+        }
+		
 	});
 </script>
 				</div>
