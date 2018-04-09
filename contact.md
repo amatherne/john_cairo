@@ -10,7 +10,7 @@ menu:
   navigation:
     identifier: _contact
     url: "/contact/"
-    weight: 4
+    weight: 3
 ---
 
 ### Let's Get Started
