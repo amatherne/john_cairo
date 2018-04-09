@@ -117,7 +117,7 @@
 <div class="background-image page-banner fade-in" style="background-image: url(/john_cairo/uploads/2018/04/08/maxresdefault.jpg);">
 	<div class="center-content">
 		
-		<h1 class=" typewrite" data-period="['500']" data-type='[ "Shti....", "sIht...","askj....", "Shitfukc." ]'></h1>
+		<h1 class=" typewrite" data-period="['500']" data-type='[ "Shti...", "sIht...","askjgf", "Shitfukc." ]'></h1>
 		<div class="sub-header fade-up">
 				 Someone messed up, probably me. <br>Let's get you back.
 		</div>
@@ -129,9 +129,6 @@
 		setTimeout(function(){
         	$('.page-banner').addClass('active');
         }, 1000);
-
-
-
 
         var TxtType = function(el, toRotate, period) {
 	        this.toRotate = toRotate;
@@ -151,7 +148,6 @@
 	        	this.txt = fullTxt.substring(0, this.txt.length - 1);
 	        } else {
 	        	this.txt = fullTxt.substring(0, this.txt.length + 1);
-	        	// console.log(i)
 
 	        }
 
@@ -168,14 +164,8 @@
 	        	delta = this.delay;
 		        this.isDeleting = true;
 	        	if (timesRun == 3) {
-	        		// delay = 100;
-	        		// delta = this.delay;
-	        		// var delay = parseInt(1000, 10) || 1000;
-	        		// delta = delay;
-	        		// console.log(delay)
 
 	        	}
-	        	// console.log(i);
 
 	        } else if (this.isDeleting && this.txt === '') {
         		this.isDeleting = false;
