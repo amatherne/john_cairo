@@ -358,7 +358,8 @@
 		}
 		@for $i from 1 through 6 {
 		  	h#{$i}, .h#{$i} {
-				transform:none;
+				// transform:none;
+
 		  	}
 		}
 	}
@@ -422,8 +423,24 @@
 		}
 	}
 
+	.in-page-w-hero {
+		.rte {
 
-		&#contact {
+			margin:($bodyLineHeight * 4) auto;
+			form {
+				max-width:700px;
+
+				transform:none;
+			}
+			@for $i from 1 through 6 {
+			  	h#{$i}, .h#{$i} {
+					// transform:none;
+			  	}
+			}
+		}
+	}
+
+	&#contact {
 		.container.padding {
 			max-width:1500px;
 			height:100vh;
@@ -456,6 +473,7 @@
 				@for $i from 1 through 6 {
 				  	h#{$i}, .h#{$i} {
 						color:$brandTwo;
+						// transform:none;
 				  	}
 				}
 			}
@@ -495,6 +513,7 @@
 		.page-banner {
 			// height:500px;
 		}
+
 	}
 
 	// .meta-title {

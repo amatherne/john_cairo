@@ -102,7 +102,7 @@
 			    	font-size: modular-scale((4 - $i), $bodyFontSize, 1.5);
 			    	font-weight:900;
 			    	letter-spacing:0em;
-			    	margin-bottom:($bodyLineHeight * 0.1);
+			    	margin:($bodyLineHeight * 0.5) 0 ($bodyLineHeight * 0.25);
 			    	font-family:$bodyFont;
 			  	}
 			}
